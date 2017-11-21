@@ -1,0 +1,30 @@
+.ui-thumbnail
+  width: $thumbnailM
+  height: @width
+
+  display: inline-block
+
+  backgroundFill()
+  background-color: $colorSnow
+  border-radius: $borderRadiusM
+  border: $borderDark
+
+  line-height: @height
+  text-align: center
+
+.ui-thumbnail-small
+  blockRound($thumbnailS)
+  line-height: @height
+
+.ui-thumbnail-mini
+  blockRound($thumbnailXS)
+  line-height: @height
+
+.ui-thumbnail-responsive
+  blockResponsive()
+  width: auto
+  height: auto
+
+.ui-thumbnail-bg
+  backgroundFill()
+  textInvisible()

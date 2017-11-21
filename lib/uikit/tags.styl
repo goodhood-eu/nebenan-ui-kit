@@ -1,0 +1,53 @@
+.ui-tag
+  padding: 4px 12px
+  display: inline-block
+
+  font-size: 12px
+  font-weight: $fontWeightL
+  color: $colorDark
+
+  cursor: pointer
+  border: 1px solid
+  border-radius: 30px
+
+  a&
+    color: @color
+
+.ui-tag-removable .icon-cross
+  margin-left: 10px
+  font-size: 10px
+  cursor: pointer
+
+.ui-tag-primary
+  background-color: $colorAction50
+  border-color: $colorAction
+
+  .icon-cross
+    color: $colorAction150
+
+.ui-tag-secondary
+  background-color: $colorSnow40
+  border-color: $colorDark20
+
+  &:hover
+    background-color: $colorSnow
+
+.ui-tag-tertiary
+  background-color: $colorHighlight45
+  border-color: $colorAction
+
+  .icon-cross
+    color: $colorAction
+
+.ui-tag-small
+  padding: 0 12px
+  line-height: 18px
+
+.ui-tag[disabled],
+.ui-tag.is-disabled
+  background-color: $colorSnow
+  border-color: $colorDark20
+  color: $colorBase
+
+  .icon-cross
+    color: @color

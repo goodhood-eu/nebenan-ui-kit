@@ -1,0 +1,42 @@
+.ui-section
+  margin-top: 15px
+  padding-top: 15px
+  display: block
+  border-top: $borderSnow
+
+.ui-section_list
+  > li
+    padding: 15px 0
+    border-top: $borderSnow
+
+    &:first-child
+      padding-top: 0
+      border-top: none
+    &:last-child
+      padding-bottom: 0
+
+.ui-user_image
+  position: relative
+
+  .ui-iconbox-warning
+    position: absolute
+    top: -10px
+    right: -10px
+    font-size: 45px
+
+.ui-controls
+  overflow: hidden
+
+  .ui-button
+    margin-top: 0
+    float: right
+
+    &:not(.ui-button-small):not(.ui-button-wide)
+      width: 100%
+      @media $mediaM
+        width: auto
+
+  a,
+  .ui-link
+    margin-top: 10px
+    display: inline-block

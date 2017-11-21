@@ -1,0 +1,45 @@
+.ui-card
+  max-width: $layoutWidthM
+  display: block
+  background: $colorSnow00
+  box-shadow: $shadowS
+  border-radius: $borderRadiusM
+
+.ui-card-section
+  padding: 15px
+  display: block
+  border-top: $borderDark
+
+  &:first-child
+    border-top: none
+    border-radius: top $borderRadiusM
+  &:last-child
+    border-radius: bottom $borderRadiusM
+
+.ui-card-header
+  padding-top: 20px
+  padding-right: 55px
+  position: relative
+
+  i
+    position: absolute
+    top: 10px
+    right: 15px
+
+    cursor: pointer
+
+.ui-card-gray
+  background: $colorSnow40
+
+.ui-card-dark
+  background: $colorBase
+  color: $colorSnow00
+
+  h1,
+  h2,
+  h3
+    color: inherit
+  a,
+  .ui-link
+    color: inherit
+    text-decoration: underline

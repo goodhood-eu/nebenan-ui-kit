@@ -1,0 +1,92 @@
+// Colors
+$colorBase = #799189
+$colorBase80 = lighten($colorBase, 20%)
+
+$colorAction150 = #8ea105
+$colorAction120 = #a0b406
+$colorAction = #b2ca06
+$colorAction70 = #bad306
+$colorAction50 = #c9da50
+
+$colorDark = #393939
+$colorDark95 = lighten($colorDark, 5%)
+$colorDark85 = lighten($colorDark, 15%)
+$colorDark70 = lighten($colorDark, 30.5%) // #757575
+$colorDark50 = lighten($colorDark, 50%)
+$colorDark20 = lighten($colorDark, 80%)
+
+$colorSnow = #edede9
+$colorSnow40 = lighten($colorSnow, 60%)
+$colorSnow00 = lighten($colorSnow, 100%)
+
+$colorSignal = #ee9e2d
+$colorSignal70 = lighten($colorSignal, 30%)
+
+$colorBlue = #005963
+$colorBlue85 = lighten($colorBlue, 15%)
+
+$colorHighlight = #e6ecb8
+$colorHighlight45 = lighten($colorHighlight, 55%)
+
+$colorLightAlpha = alpha(#fff, .7)
+$colorDarkAlpha = alpha(#000, .7)
+$colorTransparent = rgba(0, 0, 0, 0)
+
+// Typography
+$fontFamily = 'Open Sans', 'Helvetica Neue', Arial, sans-serif
+
+$fontWeightS = 300
+$fontWeightM = 400
+$fontWeightL = 600
+
+$fontSizeS = 85%
+$fontSizeM = 14px
+
+$lineHeightM = 20px
+$lineHeightS = 16px
+
+
+// Borders
+$borderRadiusS = 3px
+$borderRadiusM = 4px
+$borderRadiusL = 5px
+
+$borderDark = 1px solid $colorDark20
+$borderSnow = 1px solid $colorSnow
+
+
+// Shadows
+$shadowL = 0 3px 5px alpha($colorDark, .2)
+$shadowM = 0 2px 3px alpha($colorDark, .2)
+$shadowS = 0 1px 1px rgba(0, 0, 0, .15)
+
+// Offsets
+$offsetSpace = .33em
+
+// Transitions
+$duration = 200ms
+$easing = ease
+$transition = $duration $easing
+
+// Media
+$mediaS = '(min-width: 450px)'
+$mediaM = '(min-width: 690px)'
+$mediaL = '(min-width: 920px)'
+
+// Image Ratios
+$ratioWidescreen = 56.25% // 16:9
+
+// Components - thumbnail
+$thumbnailXS = 20px
+$thumbnailS = 40px
+$thumbnailM = 60px
+
+// Components - layout
+$layoutContentWidth = 600px
+$layoutMenuWidth = 280px
+$layoutMenuHeight = 50px
+$layoutSpacing = 15px
+$layoutSidebarWidth = $layoutMenuWidth + ($layoutSpacing * 2)
+$layoutWidth = $layoutContentWidth + $layoutSidebarWidth
+$layoutWidthM = 660px
+$layoutWidthL = 1280px

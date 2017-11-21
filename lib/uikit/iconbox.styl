@@ -1,0 +1,86 @@
+.ui-iconbox-info
+  width: 35px
+  display: inline-block
+
+  color: $colorSnow00
+  font-size: 19px
+  line-height: @width
+  text-align: center
+  &:before
+    margin-left: -.1em
+
+  background: $colorAction
+  border-radius: 50%
+  border-bottom-left-radius: 0
+
+.ui-iconbox-info-small
+  width: 28px
+  font-size: 15px
+  line-height: 25px
+
+.ui-iconbox-info-mini
+  width: 18px
+  font-size: 10px
+  line-height: 16px
+
+.ui-iconbox-label
+  width: 50px
+  height: @width
+
+  border-radius: $borderRadiusS
+
+  background: $colorAction
+  text-align: center
+  color: $colorSnow00
+
+.ui-iconbox-remove
+  $size = 18px
+  blockRound($size)
+
+  background: $colorSnow40
+  color: $colorBase
+
+  box-shadow: $shadowS
+  text-align: center
+  cursor: pointer
+
+  i
+    iconSize(11px)
+    vertical-align: top
+    line-height: $size
+
+.ui-iconbox-remove-small
+  $size = 16px
+  blockRound($size)
+
+  i
+    iconSize(9px)
+    line-height: $size
+
+.ui-iconbox-warning
+  display: inline-block
+  line-height: 0 // fix height for small sizes
+  border-radius: 50%
+  color: $colorSignal
+  background-color: $colorSnow40
+
+.ui-iconbox-mark-green
+  background: $colorAction
+  color: $colorSnow00
+  blockRound(10px)
+
+h1,
+.ui-h1,
+h2,
+.ui-h2,
+h3,
+.ui-h3,
+h4,
+.ui-h4
+  overflow: hidden
+
+  .ui-iconbox-info,
+  .ui-iconbox-info-mini,
+  .ui-iconbox-info-small
+    float: right
+    cursor: pointer

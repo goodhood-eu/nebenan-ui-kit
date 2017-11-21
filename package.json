@@ -1,0 +1,25 @@
+{
+  "name": "nebenan-ui-kit",
+  "description": "Nebenan.de UI kit",
+  "author": "Nebenan.de <max@nebenan.de>",
+  "license": "SEE LICENSE IN LICENSE FILE",
+  "readmeFilename": "README.md",
+  "homepage": "https://nebenan.de/",
+  "repository": "good-hood-gmbh/nebenan-ui-kit",
+  "bugs": "https://github.com/good-hood-gmbh/nebenan-ui-kit/issues",
+  "version": "1.0.0",
+  "devDependencies": {
+    "eslint": "4.10.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-react": "7.4.0",
+    "eslint-config-airbnb": "16.1.0",
+    "stylint": "1.5.9",
+    "stylint-stylish": "1.4.0",
+    "stylint-json-reporter": "0.3.1"
+  },
+  "dependencies": {
+    "nib": "1.1.2",
+    "normalize.css": "7.0.0"
+  }
+}
