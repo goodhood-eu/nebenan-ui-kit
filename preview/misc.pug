@@ -1,0 +1,33 @@
+figure(classname='ui-media')
+  img(classname='ui-media-image ui-thumbnail', src="{getImageProxyUrl('http://vignette1.wikia.nocookie.net/littlebigplanet/images/b/bc/Vault_Boy.png')}", alt='Vault boy')
+  figcaption(classname='ui-media-content')
+    small This is a media component
+    div
+      strong Useful component
+    link(to='/sandbox/compoents')
+    | With a link
+p(classname='c-sandbox-subsection')
+  span(classname='ui-badge ui-badge-primary') 99
+  br
+  span(classname='ui-badge ui-badge-secondary') 9999
+  br
+  span(classname='ui-badge ui-badge-primary ui-badge-rect')
+    | Sofort
+  span(classname='ui-badge ui-badge-secondary ui-badge-rect')
+    | bringen hier
+  span(classname='ui-badge ui-badge-signal ui-badge-rect')
+    | lekeres Essen
+  span(classname='ui-badge ui-badge-disabled ui-badge-rect')
+    | und
+  span(classname='ui-badge ui-badge-blue ui-badge-rect')
+    | etwas zu trinken!
+div(classname='c-sandbox-subsection')
+  span(classname='ui-eyecatcher ui-eyecatcher-primary') Eyecatcher regular?
+  span(classname='ui-eyecatcher ui-eyecatcher-danger ui-eyecatcher-reverse')
+    | Eyecatcher reverse danger!
+article(classname='ui-card')
+  header(classname='ui-card-section')
+    h1 Card title
+  div(classname='ui-card-section') {content.lorem}
+  footer(classname='ui-card-section')
+    span(classname='ui-button ui-button-primary ui-button-wide') Wide button
