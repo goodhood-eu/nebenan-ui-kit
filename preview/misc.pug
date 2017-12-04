@@ -1,33 +1,42 @@
-figure(classname='ui-media')
-  img(classname='ui-media-image ui-thumbnail', src="{getImageProxyUrl('http://vignette1.wikia.nocookie.net/littlebigplanet/images/b/bc/Vault_Boy.png')}", alt='Vault boy')
-  figcaption(classname='ui-media-content')
-    small This is a media component
-    div
-      strong Useful component
-    link(to='/sandbox/compoents')
-    | With a link
-p(classname='c-sandbox-subsection')
-  span(classname='ui-badge ui-badge-primary') 99
-  br
-  span(classname='ui-badge ui-badge-secondary') 9999
-  br
-  span(classname='ui-badge ui-badge-primary ui-badge-rect')
-    | Sofort
-  span(classname='ui-badge ui-badge-secondary ui-badge-rect')
-    | bringen hier
-  span(classname='ui-badge ui-badge-signal ui-badge-rect')
-    | lekeres Essen
-  span(classname='ui-badge ui-badge-disabled ui-badge-rect')
-    | und
-  span(classname='ui-badge ui-badge-blue ui-badge-rect')
-    | etwas zu trinken!
-div(classname='c-sandbox-subsection')
-  span(classname='ui-eyecatcher ui-eyecatcher-primary') Eyecatcher regular?
-  span(classname='ui-eyecatcher ui-eyecatcher-danger ui-eyecatcher-reverse')
-    | Eyecatcher reverse danger!
-article(classname='ui-card')
-  header(classname='ui-card-section')
-    h1 Card title
-  div(classname='ui-card-section') {content.lorem}
-  footer(classname='ui-card-section')
-    span(classname='ui-button ui-button-primary ui-button-wide') Wide button
+div.preview-section
+  figure.ui-media
+    img.ui-media-image.ui-thumbnail(src="http://vignette1.wikia.nocookie.net/littlebigplanet/images/b/bc/Vault_Boy.png", alt='Vault boy')
+    figcaption.ui-media-content
+      small This is a media component
+      div
+        strong Useful component
+      a(href="#") With a link
+
+div.preview-section
+  p
+    span.ui-badge.ui-badge-primary 99
+
+  p
+    span.ui-badge.ui-badge-secondary 9999
+
+  p
+    span.ui-badge.ui-badge-primary.ui-badge-rect Sofort
+    span.ui-badge.ui-badge-secondary.ui-badge-rect bringen hier
+    span.ui-badge.ui-badge-signal.ui-badge-rect lekeres Essen
+    span.ui-badge.ui-badge-disabled.ui-badge-rect und
+    span.ui-badge.ui-badge-blue.ui-badge-rect etwas zu trinken!
+
+div.preview-section
+  span.ui-eyecatcher.ui-eyecatcher-primary Eyecatcher regular?
+  span.ui-eyecatcher.ui-eyecatcher-danger.ui-eyecatcher-reverse Eyecatcher reverse danger!
+
+div.preview-section
+  article.ui-card
+    header.ui-card-section
+      h1 Card title
+
+    div.ui-card-section.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    footer.ui-card-section
+      span.ui-button.ui-button-primary.ui-button-wide Wide button
