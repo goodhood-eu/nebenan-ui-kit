@@ -3,3 +3,4 @@
 .gitignore
 .npmignore
 .stylintrc
+compiled

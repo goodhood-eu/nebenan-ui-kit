@@ -1,42 +1,45 @@
-div.preview-section
-  figure.ui-media
-    img.ui-media-image.ui-thumbnail(src="http://vignette1.wikia.nocookie.net/littlebigplanet/images/b/bc/Vault_Boy.png", alt='Vault boy')
-    figcaption.ui-media-content
-      small This is a media component
-      div
-        strong Useful component
-      a(href="#") With a link
+extends ./_layout
 
-div.preview-section
-  p
-    span.ui-badge.ui-badge-primary 99
+block body
+  div.preview-section
+    figure.ui-media
+      img.ui-media-image.ui-thumbnail(src="http://vignette1.wikia.nocookie.net/littlebigplanet/images/b/bc/Vault_Boy.png", alt='Vault boy')
+      figcaption.ui-media-content
+        small This is a media component
+        div
+          strong Useful component
+        a(href="#") With a link
 
-  p
-    span.ui-badge.ui-badge-secondary 9999
+  div.preview-section
+    p
+      span.ui-badge.ui-badge-primary 99
 
-  p
-    span.ui-badge.ui-badge-primary.ui-badge-rect Sofort
-    span.ui-badge.ui-badge-secondary.ui-badge-rect bringen hier
-    span.ui-badge.ui-badge-signal.ui-badge-rect lekeres Essen
-    span.ui-badge.ui-badge-disabled.ui-badge-rect und
-    span.ui-badge.ui-badge-blue.ui-badge-rect etwas zu trinken!
+    p
+      span.ui-badge.ui-badge-secondary 9999
 
-div.preview-section
-  span.ui-eyecatcher.ui-eyecatcher-primary Eyecatcher regular?
-  span.ui-eyecatcher.ui-eyecatcher-danger.ui-eyecatcher-reverse Eyecatcher reverse danger!
+    p
+      span.ui-badge.ui-badge-primary.ui-badge-rect Sofort
+      span.ui-badge.ui-badge-secondary.ui-badge-rect bringen hier
+      span.ui-badge.ui-badge-signal.ui-badge-rect lekeres Essen
+      span.ui-badge.ui-badge-disabled.ui-badge-rect und
+      span.ui-badge.ui-badge-blue.ui-badge-rect etwas zu trinken!
 
-div.preview-section
-  article.ui-card
-    header.ui-card-section
-      h1 Card title
+  div.preview-section
+    span.ui-eyecatcher.ui-eyecatcher-primary Eyecatcher regular?
+    span.ui-eyecatcher.ui-eyecatcher-danger.ui-eyecatcher-reverse Eyecatcher reverse danger!
 
-    div.ui-card-section.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  div.preview-section
+    article.ui-card
+      header.ui-card-section
+        h1 Card title
 
-    footer.ui-card-section
-      span.ui-button.ui-button-primary.ui-button-wide Wide button
+      div.ui-card-section.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+      footer.ui-card-section
+        span.ui-button.ui-button-primary.ui-button-wide Wide button
