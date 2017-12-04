@@ -7,7 +7,7 @@
   "homepage": "https://nebenan.de/",
   "repository": "good-hood-gmbh/nebenan-ui-kit",
   "bugs": "https://github.com/good-hood-gmbh/nebenan-ui-kit/issues",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "scripts": {
     "gulp": "gulp",
     "start": "gulp"
@@ -28,5 +28,9 @@
     "del": "3.0.0",
     "gulp-stylus": "2.6.0",
     "gulp-pug": "3.3.0"
+  },
+  "peerDependencies": {
+    "nib": "1.1.2",
+    "normalize.css": "^7.0.0"
   }
 }

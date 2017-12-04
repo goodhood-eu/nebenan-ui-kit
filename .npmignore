@@ -4,3 +4,5 @@
 .npmignore
 .stylintrc
 compiled
+preview
+gulpfile.js
