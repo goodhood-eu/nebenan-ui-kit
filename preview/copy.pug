@@ -1,15 +1,15 @@
 extends ./_layout
 
 block body
-  h2 Copy
+  +header('Copy')
 
-  div.preview-section
+  .preview-section
     h1 Headline Large
     h2 Headline Medium
     h3 Headline Small
     h4 Headline Smallest
 
-  div.preview-section
+  .preview-section
     ul
       li Regular copy
 
@@ -29,7 +29,7 @@ block body
         small
           a(href="#") Link copy
 
-  div.preview-section
+  .preview-section
     h3 Example
     p.
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

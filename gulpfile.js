@@ -88,6 +88,11 @@ const watch = () => {
       directoryListing: {
         enable: true,
         path: COMPILED_LOCATION,
+        options: {
+          filter(filename) {
+            return /\.html$/.test(filename);
+          },
+        },
       },
     }));
 };
