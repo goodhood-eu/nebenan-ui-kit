@@ -4,15 +4,6 @@ block body
   +header('Misc')
 
   .preview-section
-    figure.ui-media
-      img.ui-media-image.ui-thumbnail(src="http://vignette1.wikia.nocookie.net/littlebigplanet/images/b/bc/Vault_Boy.png", alt='Vault boy')
-      figcaption.ui-media-content
-        small This is a media component
-        div
-          strong Useful component
-        a(href="#") With a link
-
-  .preview-section
     p
       span.ui-badge.ui-badge-primary 99
 
@@ -29,6 +20,22 @@ block body
   .preview-section
     span.ui-eyecatcher.ui-eyecatcher-primary Eyecatcher regular?
     span.ui-eyecatcher.ui-eyecatcher-danger.ui-eyecatcher-reverse Eyecatcher reverse danger!
+
+  .preview-section
+    ul.ui-options
+      li UI
+      li Options
+      li: span.ui-link with link
+      li: span.ui-label and label
+      li: span.ui-label.ui-label-primary and more label!
+
+      li.is-selected seleted
+      li.is-selected
+        span.ui-link with link
+      li.is-selected
+        span.ui-label and label
+      li.is-selected
+        span.ui-label.ui-label-primary and more label
 
   .preview-push
     article.ui-card
@@ -53,6 +60,13 @@ block body
           li UI
           li Section
           li List
+
+      .ui-card-section
+        .ui-hint
+          strong HINT:&nbsp;
+          | You can have&nbsp;
+          em hints
+          | !
 
       footer.ui-card-section.ui-controls
         span.ui-button.ui-button-primary UI

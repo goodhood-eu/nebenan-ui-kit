@@ -1,0 +1,33 @@
+extends ./_layout
+
+block body
+  +header('Media')
+
+  .preview-section
+    figure.ui-media
+      img.ui-media-image.ui-thumbnail(src=DEMO_IMAGE)
+      figcaption.ui-media-content
+        small This is a media component
+        div
+          strong Useful component
+        a(href="#") With a link
+
+
+  .preview-section
+    figure.ui-media.ui-media-small
+      img.ui-media-image.ui-thumbnail(src=DEMO_IMAGE)
+      figcaption.ui-media-content
+        small This is a small media component
+        div
+          strong Useful component
+        a(href="#") With a link
+
+
+  .preview-section
+    figure.ui-media.ui-media-mini
+      img.ui-media-image.ui-thumbnail(src=DEMO_IMAGE)
+      figcaption.ui-media-content
+        small This is a mini media component
+        div
+          strong Useful component
+        a(href="#") With a link

@@ -1,0 +1,22 @@
+extends ./_layout
+
+block body
+  +header('Inputs')
+
+  .preview-inputs
+    ul
+      li
+        input.ui-input(value="Input test")
+      li
+        span.ui-input Span test
+      li
+        textarea.ui-input(rows="1") Textarea test
+      li
+        input.ui-input.ui-input-error(value="Input test")
+        span.ui-error Error!
+      li
+        span.ui-input.ui-input-error Span test
+        span.ui-error Error!
+      li
+        textarea.ui-input.ui-input-error(rows="1") Textarea test
+        span.ui-error Error!

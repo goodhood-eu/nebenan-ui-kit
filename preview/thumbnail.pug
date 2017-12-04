@@ -1,0 +1,23 @@
+extends ./_layout
+
+block body
+  +header('Misc')
+
+  .preview-section
+    ul
+      li: img.ui-thumbnail(src=DEMO_IMAGE)
+      li: img.ui-thumbnail.ui-thumbnail-small(src=DEMO_IMAGE)
+      li: img.ui-thumbnail.ui-thumbnail-mini(src=DEMO_IMAGE)
+
+  .preview-section
+    ul
+      li: span.ui-thumbnail(style="background-image: url('" + DEMO_IMAGE + "')")
+      li: span.ui-thumbnail.ui-thumbnail-small(style="background-image: url('" + DEMO_IMAGE + "')")
+      li: span.ui-thumbnail.ui-thumbnail-mini(style="background-image: url('" + DEMO_IMAGE + "')")
+
+  .preview-section
+    span.ui-thumbnail.ui-thumbnail-bg(style="background-image: url('" + DEMO_IMAGE + "')")
+      | My secret message will stay secret
+
+  .preview-section
+    span.ui-thumbnail.ui-thumbnail-responsive(style="background-image: url('" + DEMO_IMAGE + "')")
