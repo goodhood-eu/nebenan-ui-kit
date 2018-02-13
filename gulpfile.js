@@ -14,8 +14,8 @@ const errorReporter = (e) => {
   console.log(chalk.bold.red(`Build error!\n${e.stack || e}`));
 };
 
-const watchReporter = (e) => {
-  console.log(chalk.cyan(`File ${pathNormalize(e.path)} ${e.type}, flexing 💪`));
+const watchReporter = (path) => {
+  console.log(chalk.cyan(`File ${pathNormalize(path)} changed, flexing 💪`));
 };
 
 const styles = () => {
@@ -71,13 +71,13 @@ const watch = () => {
     `${SOURCE_LOCATION}/**/*.pug`,
   ];
 
-  gulp.watch(styleFiles).on('change', (event) => {
-    watchReporter(event);
+  gulp.watch(styleFiles).on('change', (path) => {
+    watchReporter(path);
     styles();
   });
 
-  gulp.watch(templateFiles).on('change', (event) => {
-    watchReporter(event);
+  gulp.watch(templateFiles).on('change', (path) => {
+    watchReporter(path);
     templates();
   });
 
@@ -98,11 +98,11 @@ const watch = () => {
 };
 
 
-gulp.task('clean', (done) => require('del')([COMPILED_LOCATION], done));
+gulp.task('clean', () => require('promised-del')([COMPILED_LOCATION]));
 
 gulp.task('styles', styles);
 gulp.task('templates', templates);
 
-gulp.task('compile', require('gulp-sequence')('clean', ['styles', 'templates']));
+gulp.task('compile', gulp.parallel('clean', gulp.series('styles', 'templates')));
 
-gulp.task('default', ['compile'], watch);
+gulp.task('default', gulp.series('compile', watch));
