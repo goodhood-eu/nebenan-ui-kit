@@ -24,7 +24,6 @@ const styles = () => {
   const stylusOptions = {
     errors: true,
     sourcemaps: true,
-    use: [require('nib')()],
     paths: [
       `${__dirname}/node_modules`,
     ],
@@ -36,6 +35,10 @@ const styles = () => {
   return gulp
     .src(`${SOURCE_LOCATION}/style.styl`)
     .pipe(require('gulp-stylus')(stylusOptions))
+    .pipe(require('gulp-postcss')([
+      require('autoprefixer')(),
+      require('postcss-flexbugs-fixes'),
+    ]))
     .on('error', errorReporter)
     .pipe(gulp.dest(COMPILED_LOCATION))
     .on('end', () => benchmarkReporter('Stylusified', startTime));
@@ -103,6 +106,6 @@ gulp.task('clean', () => require('promised-del')([COMPILED_LOCATION]));
 gulp.task('styles', styles);
 gulp.task('templates', templates);
 
-gulp.task('compile', gulp.parallel('clean', gulp.series('styles', 'templates')));
+gulp.task('compile', gulp.series('clean', gulp.parallel('styles', 'templates')));
 
 gulp.task('default', gulp.series('compile', watch));
