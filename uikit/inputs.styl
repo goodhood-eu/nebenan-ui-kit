@@ -12,7 +12,9 @@
   border-radius: $borderRadiusM
 
   background: $colorSnow40
-  placeholder(color $colorDark70,) // @stylint ignore
+
+  &::placeholder
+    color: $colorDark70
 
   span&
     min-height: 40px
