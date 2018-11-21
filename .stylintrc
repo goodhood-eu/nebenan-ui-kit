@@ -1,10 +1,7 @@
 {
-  "reporter": "stylint-stylish",
   "reporterOptions": {
-    "absolutePath": true,
-    "ruleName": true
+    "columns": ["lineData", "severity", "description"]
   },
-
   "blocks": false,
   "brackets": "never",
   "colons": "always",
