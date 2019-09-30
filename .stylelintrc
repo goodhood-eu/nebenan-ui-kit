@@ -1,0 +1,7 @@
+{
+  "extends": "stylelint-config-nebenan",
+  "rules": {
+    "number-leading-zero": "never",
+    "no-descending-specificity": null
+  }
+}

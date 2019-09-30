@@ -1,6 +1,9 @@
 const gulp = require('gulp');
 const chalk = require('chalk');
 
+const sass = require('node-sass');
+const gulpSass = require('gulp-sass');
+
 const SOURCE_LOCATION = `${__dirname}/preview`;
 const COMPILED_LOCATION = `${__dirname}/compiled`;
 
@@ -21,27 +24,28 @@ const watchReporter = (path) => {
 const styles = () => {
   const startTime = Date.now();
 
-  const stylusOptions = {
-    errors: true,
-    sourcemaps: true,
-    paths: [
+  const sassOptions = {
+    includePaths: [
       `${__dirname}/node_modules`,
     ],
-    'include css': true,
-    urlfunc: 'embedurl',
-    linenos: true,
+    functions: require('sass-functions/replace')(),
+    importer: require('node-sass-glob-importer')(),
+    outputStyle: 'expanded',
+    sourceComments: true,
   };
 
+  gulpSass.compiler = sass;
+
   return gulp
-    .src(`${SOURCE_LOCATION}/style.styl`)
-    .pipe(require('gulp-stylus')(stylusOptions))
+    .src(`${SOURCE_LOCATION}/style.scss`)
+    .pipe(gulpSass(sassOptions).on('error', gulpSass.logError))
     .pipe(require('gulp-postcss')([
       require('autoprefixer')(),
       require('postcss-flexbugs-fixes'),
     ]))
     .on('error', errorReporter)
     .pipe(gulp.dest(COMPILED_LOCATION))
-    .on('end', () => benchmarkReporter('Stylusified', startTime));
+    .on('end', () => benchmarkReporter('Sassified', startTime));
 };
 
 const templates = () => {
@@ -67,7 +71,7 @@ const templates = () => {
 
 const watch = () => {
   const styleFiles = [
-    './**/*.styl',
+    './**/*.scss',
   ];
 
   const templateFiles = [
@@ -99,7 +103,6 @@ const watch = () => {
       },
     }));
 };
-
 
 gulp.task('clean', () => require('promised-del')([COMPILED_LOCATION]));
 

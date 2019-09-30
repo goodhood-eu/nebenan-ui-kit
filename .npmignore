@@ -2,7 +2,8 @@
 .eslintrc
 .gitignore
 .npmignore
-.stylintrc
+.stylelintignore
+.stylelintrc
 compiled
 preview
 gulpfile.js

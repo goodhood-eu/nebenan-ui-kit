@@ -1,0 +1,91 @@
+// Colors
+$colorBase: #799189;
+$colorBase80: #94a7a1;
+
+$colorAction150: #93a70a;
+$colorAction120: #a0b605;
+$colorAction: #b2ca06;
+$colorAction70: #c1d538;
+$colorAction50: #d1df6a;
+
+$colorDark: #393939;
+$colorDark95: #434343;
+$colorDark85: #575757;
+$colorDark70: #757575;
+$colorDark50: #9c9c9c;
+$colorDark20: #d7d7d7;
+$colorDark10: #e1e1de;
+
+$colorSnow: #edede9;
+$colorSnow40: #f8f8f6;
+$colorSnow00: #fff;
+
+$colorSignal: #ee9e2d;
+$colorSignal70: #f3bb6c;
+
+$colorBlue: #005a64;
+$colorBlue85: #0090a1;
+
+$colorHighlight: #e7efb4;
+$colorHighlight45: #f0f4cd;
+
+$colorLightAlpha: opacify(#fff, .7);
+$colorDarkAlpha: opacify(#000, .7);
+$colorTransparent: rgba(0, 0, 0, 0);
+
+// Typography
+$fontFamily: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+
+$fontWeightS: 300;
+$fontWeightM: 400;
+$fontWeightL: 600;
+
+$fontSizeS: 85%;
+$fontSizeM: 14px;
+
+$lineHeightM: 20px;
+$lineHeightS: 16px;
+
+// Borders
+$borderRadiusS: 3px;
+$borderRadiusM: 4px;
+$borderRadiusL: 5px;
+
+$borderDark: 1px solid $colorDark20;
+$borderSnow: 1px solid $colorSnow;
+
+// Shadows
+$shadowL: 0 3px 5px opacify($colorDark, .2);
+$shadowM: 0 2px 3px opacify($colorDark, .2);
+$shadowS: 0 1px 1px rgba(0, 0, 0, .15);
+
+// Offsets
+$offsetSpace: .33em;
+
+// Transitions
+$duration: 200ms;
+$easing: ease;
+$transition: $duration $easing;
+
+// Media
+$mediaS: 'min-width: 450px';
+$mediaM: 'min-width: 690px';
+$mediaL: 'min-width: 920px';
+
+// Image Ratios
+$ratioWidescreen: 56.25%; // 16:9
+
+// Components - thumbnail
+$thumbnailXS: 20px;
+$thumbnailS: 40px;
+$thumbnailM: 60px;
+
+// Components - layout
+$layoutContentWidth: 600px;
+$layoutMenuWidth: 280px;
+$layoutMenuHeight: 50px;
+$layoutSpacing: 15px;
+$layoutSidebarWidth: $layoutMenuWidth + ($layoutSpacing * 2);
+$layoutWidth: $layoutContentWidth + $layoutSidebarWidth;
+$layoutWidthM: 660px;
+$layoutWidthL: 1280px;
