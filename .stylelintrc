@@ -13,7 +13,6 @@
     "scss/comment-no-loud": true,
     "scss/declaration-nested-properties": "never",
     "scss/at-function-parentheses-space-before": "never",
-    "scss/at-else-if-parentheses-space-before": "never",
-    "scss/no-duplicate-dollar-variables": true
+    "scss/at-else-if-parentheses-space-before": "never"
   }
 }
