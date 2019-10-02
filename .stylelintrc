@@ -5,9 +5,9 @@
     "number-leading-zero": "never",
     "no-descending-specificity": null,
 
-    "scss/dollar-variable-pattern": "^[a-z_\\-]+$",
-    "scss/at-function-pattern": "^[a-z_\\-]+$",
-    "scss/at-mixin-pattern": "^[a-z_\\-]+$",
+    "scss/dollar-variable-pattern": "^[a-z0-9_\\-]+$",
+    "scss/at-function-pattern": "^[a-z0-9_\\-]+$",
+    "scss/at-mixin-pattern": "^[a-z0-9_\\-]+$",
     "scss/percent-placeholder-pattern": "^we-are-not-using-placeholders-at-this-time$",
 
     "scss/comment-no-loud": true,
