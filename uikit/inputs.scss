@@ -6,22 +6,22 @@
 
   font-size: $fontSizeM
   font-weight: $fontWeightM
-  color: $colorDark
+  color: $color-gray-00
 
-  border: 1px solid $colorDark20
+  border: 1px solid $color-gray-05
   border-radius: $borderRadiusM
 
-  background: $colorSnow40
+  background: $color-gray-08
 
   &::placeholder
-    color: $colorDark70
+    color: $color-gray-02
 
   span&
     min-height: 40px
     width: auto
     height: auto
     padding: 9px 15px
-    color: $colorDark70
+    color: $color-gray-02
     word-wrap: break-word
 
   textarea&
@@ -32,4 +32,4 @@
     resize: none
 
 .ui-input-error
-  border-color: $colorSignal
+  border-color: $color-orange-01

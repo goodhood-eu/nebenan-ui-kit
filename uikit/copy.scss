@@ -11,7 +11,7 @@ h1,
   font-size: 25px
   line-height: 32px
   font-weight: $fontWeightM
-  color: $colorDark
+  color: $color-gray-00
   text-transform: none
 
 h2,
@@ -20,7 +20,7 @@ h2,
   font-size: 20px
   line-height: 26px
   font-weight: $fontWeightM
-  color: $colorDark
+  color: $color-gray-00
   text-transform: none
 
 h3,
@@ -28,7 +28,7 @@ h3,
   font-size: 17px
   line-height: 24px
   font-weight: $fontWeightL
-  color: $colorDark
+  color: $color-gray-00
   text-transform: none
 
 h4,
@@ -37,7 +37,7 @@ h4,
   font-size: $fontSizeM
   line-height: 18px
   font-weight: $fontWeightL
-  color: $colorDark
+  color: $color-gray-00
   text-transform: uppercase
 
 // Copy
@@ -47,7 +47,7 @@ input,
 button,
 textarea
   font: normal $fontSizeM/$lineHeightM $fontFamily
-  color: $colorDark70
+  color: $color-gray-02
 
 small,
 .ui-small
@@ -70,15 +70,15 @@ a,
 
   &:active,
   &:hover
-    color: $colorDark85
+    color: $color-gray-01
 
   &.is-disabled
-    color: $colorDark20
+    color: $color-gray-05
     cursor: auto
 
 // Label
 .ui-label
-  color: $colorDark
+  color: $color-gray-00
   font-size: 12px
   line-height: 15px
   font-style: normal
@@ -86,14 +86,14 @@ a,
   user-select: none
 
 .ui-label-primary
-  color: $colorDark70
+  color: $color-gray-02
   font-size: $fontSizeM
   line-height: $lineHeightM
 
 // Error
 .ui-error
   display: block
-  color: $colorSignal
+  color: $color-orange-01
   font-size: $fontSizeM
   line-height: $lineHeightM
   font-style: normal

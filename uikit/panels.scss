@@ -5,16 +5,16 @@
   border-radius: $borderRadiusM
 
 .ui-panel-primary
-  background: $colorHighlight
+  background: $color-green-04
   border-color: $color-green-01
-  color: $colorDark85
+  color: $color-gray-01
 
 .ui-panel-secondary
   background: $color-base-01
   border-color: $color-base-01
-  color: $colorSnow00
+  color: $color-gray-09
 
 .ui-panel-danger
-  background: $colorSignal70
-  border-color: $colorSignal
-  color: $colorDark85
+  background: $color-orange-02
+  border-color: $color-orange-01
+  color: $color-gray-01

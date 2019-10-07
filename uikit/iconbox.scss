@@ -2,7 +2,7 @@
   width: 35px
   display: inline-block
 
-  color: $colorSnow00
+  color: $color-gray-09
   font-size: 19px
   line-height: @width
   text-align: center
@@ -32,13 +32,13 @@
 
   background: $color-green-02
   text-align: center
-  color: $colorSnow00
+  color: $color-gray-09
 
 .ui-iconbox-remove
   $size = 18px
   blockRound($size)
 
-  background: $colorSnow40
+  background: $color-gray-08
   color: $color-base-01
 
   box-shadow: $shadowS
@@ -62,12 +62,12 @@
   display: inline-block
   line-height: 0 // fix height for small sizes
   border-radius: 50%
-  color: $colorSignal
-  background-color: $colorSnow40
+  color: $color-orange-01
+  background-color: $color-gray-08
 
 .ui-iconbox-mark-green
   background: $color-green-02
-  color: $colorSnow00
+  color: $color-gray-09
   blockRound(10px)
 
 h1,

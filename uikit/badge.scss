@@ -14,53 +14,50 @@
 }
 
 .ui-badge-rect {
-  border-radius: $borderRadiusM;
+  border-radius: $border-radius-m;
 }
-
 
 .ui-badge-primary {
   background: $color-green-02;
-  color: $colorSnow00;
+  color: $color-gray-09;
 
-  a#{&} {
-    color: $colorSnow00;
+  @at-root a#{&} {
+    color: $color-gray-09;
   }
 }
 
 .ui-badge-secondary {
   background: $color-base-01;
-  color: $colorSnow00;
+  color: $color-gray-09;
 
-  a#{&} {
-    color: $colorSnow00;
+  @at-root a#{&} {
+    color: $color-gray-09;
   }
 }
 
 .ui-badge-signal {
-  background: $colorSignal;
-  color: $colorSnow00;
+  background: $color-orange-01;
+  color: $color-gray-09;
 
-  a#{&} {
-    color: $colorSnow00;
+  @at-root a#{&} {
+    color: $color-gray-09;
   }
-
 }
 
-
 .ui-badge-blue {
-  background: $colorBlue85;
-  color: $colorSnow00;
+  background: $color-blue-01;
+  color: $color-gray-09;
 
-  a#{&} {
-    color: $colorSnow00;
+  @at-root a#{&} {
+    color: $color-gray-09;
   }
 }
 
 .ui-badge-disabled {
-  background: $colorDark70;
-  color: $colorSnow00;
+  background: $color-gray-02;
+  color: $color-gray-09;
 
-  a#{&} {
-    color: $colorSnow00;
+  @at-root a#{&} {
+    color: $color-gray-09;
   }
 }

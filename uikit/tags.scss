@@ -4,7 +4,7 @@
 
   font-size: 12px
   font-weight: $fontWeightL
-  color: $colorDark
+  color: $color-gray-00
 
   cursor: pointer
   border: 1px solid
@@ -26,14 +26,14 @@
     color: $color-green-00
 
 .ui-tag-secondary
-  background-color: $colorSnow40
-  border-color: $colorDark20
+  background-color: $color-gray-08
+  border-color: $color-gray-05
 
   &:hover
-    background-color: $colorSnow
+    background-color: $color-gray-07
 
 .ui-tag-tertiary
-  background-color: $colorHighlight45
+  background-color: $color-green-05
   border-color: $color-green-02
 
   > i
@@ -45,8 +45,8 @@
 
 .ui-tag[disabled],
 .ui-tag.is-disabled
-  background-color: $colorSnow
-  border-color: $colorDark20
+  background-color: $color-gray-07
+  border-color: $color-gray-05
   color: $color-base-01
 
   > i

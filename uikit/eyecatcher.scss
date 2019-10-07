@@ -3,7 +3,7 @@
 
   padding: 9px 20px
 
-  color: $colorSnow00
+  color: $color-gray-09
   text-align: center
   font-weight: $fontWeighL
   font-size: $fontSizeS
@@ -13,15 +13,15 @@
   box-shadow: $shadowL
 
   a&
-    color: $colorSnow00
+    color: $color-gray-09
 
 .ui-eyecatcher-primary
   text-transform: uppercase
   background: $color-green-02
 
 .ui-eyecatcher-danger
-  border: 3px solid $colorSnow00
-  background: $colorSignal
+  border: 3px solid $color-gray-09
+  background: $color-orange-01
 
 .ui-eyecatcher-reverse
   border-radius: 100px 100px 0 100px

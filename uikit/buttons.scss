@@ -1,115 +1,136 @@
-$uiButtonHeight = 40px
-$uiButtonSmallHeight = 28px
+$_ui-button-height: 40px;
+$_ui-button-height-s: 28px;
 
 // Default button styles
-.ui-button
-  min-width: 100px
-  height: $uiButtonHeight
+.ui-button {
+  min-width: 100px;
+  height: $_ui-button-height;
 
-  padding: 0 30px
-  display: inline-block
+  padding: 0 30px;
+  display: inline-block;
 
-  font-size: $fontSizeM
-  font-weight: $fontWeightL
-  line-height: @height
-  text-transform: uppercase
-  text-decoration: none
-  text-align: center
+  font-size: $font-size-m;
+  font-weight: $font-weight-l;
+  line-height: $_ui-button-height;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
 
-  border: 1px solid
-  border-radius: $borderRadiusM
+  border: 1px solid;
+  border-radius: $border-radius-m;
 
-  user-select: none
-  cursor: pointer
-  touch-action: manipulation
-  touch-callout: none
-  pointer-events: auto
+  user-select: none;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-touch-callout: none;
+  pointer-events: auto;
 
-  a&
-    color: inherit
+  @at-root a#{&} {
+    color: inherit;
+  }
+}
 
 // Sizes
-.ui-button-small
-  min-width: 80px
-  height: $uiButtonSmallHeight
+.ui-button-small {
+  min-width: 80px;
+  height: $_ui-button-height-s;
 
-  padding: 0 20px
+  padding: 0 20px;
 
-  font-size: 12px
-  line-height: @height
-  text-transform: none
+  font-size: 12px;
+  line-height: $_ui-button-height-s;
+  text-transform: none;
 
-  border-radius: $borderRadiusS
+  border-radius: $border-radius-s;
+}
 
 // Styles
-.ui-button-wide
-  width: 100%
+.ui-button-wide {
+  width: 100%;
+}
 
-.ui-button-round
-  border-radius: ($uiButtonHeight / 2)
+.ui-button-round {
+  border-radius: ($_ui-button-height / 2);
 
-  &.ui-button-small
-    border-radius: ($uiButtonSmallHeight / 2)
+  &.ui-button-small {
+    border-radius: ($_ui-button-height-s / 2);
+  }
+}
 
-.ui-button-icon i
-  margin-left: 8px
+.ui-button-icon i {
+  margin-left: 8px;
+}
 
 // Colors
-.ui-button-primary
-  background: $color-green-02
-  border-color: $color-green-02
-  color: $colorSnow00
-  a&
-    color: $colorSnow00
+.ui-button-primary {
+  background: $color-green-02;
+  border-color: $color-green-02;
+  color: $color-gray-09;
+
+  @at-root a#{&} {
+    color: $color-gray-09;
+  }
 
   &:hover,
   &:active,
-  &.is-active
-    background: $color-green-03
-    border-color: $color-green-03
+  &.is-active {
+    background: $color-green-03;
+    border-color: $color-green-03;
+  }
+}
 
-.ui-button-secondary
-  background: $colorSnow40
-  border-color: $colorDark20
-  color: $colorDark70
+.ui-button-secondary {
+  background: $color-gray-08;
+  border-color: $color-gray-05;
+  color: $color-gray-02;
 
-  a&
-    color: $colorDark70
-
-  &:hover,
-  &:active,
-  &.is-active
-    background: $color-base-01
-    border-color: $color-base-01
-    color: $colorSnow00
-
-.ui-button-danger
-  background: $colorSignal
-  border-color: $colorSignal
-  color: $colorSnow00
-  a&
-    color: $colorSnow00
+  @at-root a#{&} {
+    color: $color-gray-02;
+  }
 
   &:hover,
   &:active,
-  &.is-active
-    background: $colorSignal70
-    border-color: $colorSignal70
+  &.is-active {
+    background: $color-base-01;
+    border-color: $color-base-01;
+    color: $color-gray-09;
+  }
+}
+
+.ui-button-danger {
+  background: $color-orange-01;
+  border-color: $color-orange-01;
+  color: $color-gray-09;
+
+  @at-root a#{&} {
+    color: $color-gray-09;
+  }
+
+  &:hover,
+  &:active,
+  &.is-active {
+    background: $color-orange-02;
+    border-color: $color-orange-02;
+  }
+}
 
 // At the bottom - overrides defaults
 .ui-button[disabled],
-.ui-button.is-disabled
-  background: $colorDark20
-  border-color: $colorDark20
+.ui-button.is-disabled {
+  background: $color-gray-05;
+  border-color: $color-gray-05;
 
-  color: $colorSnow00
-  cursor: default
+  color: $color-gray-09;
+  cursor: default;
 
-  a&
-    color: $colorSnow00
+  @at-root a#{&} {
+    color: $color-gray-09;
+  }
 
   &:hover,
   &:active,
-  &.is-active
-    background: $colorDark20
-    border-color: $colorDark20
+  &.is-active {
+    background: $color-gray-05;
+    border-color: $color-gray-05;
+  }
+}

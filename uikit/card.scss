@@ -1,33 +1,43 @@
-.ui-card
-  max-width: $layoutWidthM
-  display: block
-  background: $colorSnow00
-  box-shadow: $shadowS
-  border-radius: $borderRadiusM
+.ui-card {
+  max-width: $layout-width-m;
+  display: block;
+  background: $color-gray-09;
+  box-shadow: $shadow-bottom-default;
+  border-radius: $border-radius-m;
+}
 
-.ui-card-section
-  padding: 15px
-  display: block
-  border-top: $borderDark
+.ui-card-section {
+  padding: 15px;
+  display: block;
+  border-top: $border-dark;
 
-  &:first-child
-    border-top: none
-    border-radius: $borderRadiusM $borderRadiusM 0 0
-  &:last-child
-    border-radius: 0 0 $borderRadiusM $borderRadiusM
+  &:first-child {
+    border-top: none;
+    border-radius: $border-radius-m $border-radius-m 0 0;
+  }
 
-.ui-card-gray
-  background: $colorSnow40
+  &:last-child {
+    border-radius: 0 0 $border-radius-m $border-radius-m;
+  }
+}
 
-.ui-card-dark
-  background: $color-base-01
-  color: $colorSnow00
+.ui-card-gray {
+  background: $color-gray-08;
+}
+
+.ui-card-dark {
+  background: $color-base-01;
+  color: $color-gray-09;
 
   h1,
   h2,
-  h3
-    color: inherit
+  h3 {
+    color: inherit;
+  }
+
   a,
-  .ui-link
-    color: inherit
-    text-decoration: underline
+  .ui-link {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
