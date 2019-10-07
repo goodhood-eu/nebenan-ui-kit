@@ -1,13 +1,13 @@
-$color-grey-00: #393939;
-$color-grey-01: #575757;
-$color-grey-02: #757575;
-$color-grey-03: #9c9c9c;
-$color-grey-04: #bbb;
-$color-grey-05: #d7d7d7;
-$color-grey-06: #e1e1de;
-$color-grey-07: #edede9;
-$color-grey-08: #f8f8f6;
-$color-grey-09: #fff;
+$color-gray-00: #393939;
+$color-gray-01: #575757;
+$color-gray-02: #757575;
+$color-gray-03: #9c9c9c;
+$color-gray-04: #bbb;
+$color-gray-05: #d7d7d7;
+$color-gray-06: #e1e1de;
+$color-gray-07: #edede9;
+$color-gray-08: #f8f8f6;
+$color-gray-09: #fff;
 
 $color-green-00: #93a70a;
 $color-green-01: #a0b605;
@@ -45,3 +45,7 @@ $color-red-02: #fbdfe0;
 $color-red-03: #fdeeef;
 
 $color-purple-00: #854a95;
+
+$color-white-alpha: rgba(255, 255, 255, .7);
+$color-dark-alpha: rgba(0, 0, 0, .7);
+$color-transparent: rgba(0, 0, 0, 0);
