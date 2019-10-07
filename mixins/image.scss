@@ -1,0 +1,27 @@
+@function get-image-size($image) {
+  $size: image-size($image);
+
+  @return ('width': map-get($size, 'width') / 2, 'height': map-get($size, 'height') / 2);
+}
+
+@function get-image-ratio($image) {
+  $size: get-image-size($image);
+
+  @return percentage(map-get($size, 'height') / map-get($size, 'width'));
+}
+
+@mixin illustration-fluid($image) {
+  $size: get-image-size($image);
+
+  max-width: map-get($size, 'width');
+  max-height: map-get($size, 'height');
+  margin: 0 auto;
+  display: block;
+
+  &::after {
+    @include block-responsive(get-image-ratio($image));
+    @include background-fill();
+    content: '';
+    background-image: url($image);
+  }
+}
