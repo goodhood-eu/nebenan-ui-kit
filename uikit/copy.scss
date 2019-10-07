@@ -60,13 +60,13 @@ strong,
 // Link
 a,
 .ui-link
-  color: $colorBase
+  color: $color-base-01
   text-decoration: none
   cursor: pointer
   pointer-events: auto
 
   &:visited
-    color: $colorBase
+    color: $color-base-01
 
   &:active,
   &:hover
@@ -102,7 +102,7 @@ a,
 // Success message
 .ui-success
   display: block
-  color: $colorAction
+  color: $color-green-02
   font-size: $fontSizeM
   line-height: $lineHeightM
   font-style: normal

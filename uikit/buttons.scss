@@ -56,8 +56,8 @@ $uiButtonSmallHeight = 28px
 
 // Colors
 .ui-button-primary
-  background: $colorAction
-  border-color: $colorAction
+  background: $color-green-02
+  border-color: $color-green-02
   color: $colorSnow00
   a&
     color: $colorSnow00
@@ -65,8 +65,8 @@ $uiButtonSmallHeight = 28px
   &:hover,
   &:active,
   &.is-active
-    background: $colorAction70
-    border-color: $colorAction70
+    background: $color-green-03
+    border-color: $color-green-03
 
 .ui-button-secondary
   background: $colorSnow40
@@ -79,8 +79,8 @@ $uiButtonSmallHeight = 28px
   &:hover,
   &:active,
   &.is-active
-    background: $colorBase
-    border-color: $colorBase
+    background: $color-base-01
+    border-color: $color-base-01
     color: $colorSnow00
 
 .ui-button-danger

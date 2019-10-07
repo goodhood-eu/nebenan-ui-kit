@@ -9,7 +9,7 @@
   &:before
     margin-left: -.1em
 
-  background: $colorAction
+  background: $color-green-02
   border-radius: 50%
   border-bottom-left-radius: 0
 
@@ -30,7 +30,7 @@
 
   border-radius: $borderRadiusS
 
-  background: $colorAction
+  background: $color-green-02
   text-align: center
   color: $colorSnow00
 
@@ -39,7 +39,7 @@
   blockRound($size)
 
   background: $colorSnow40
-  color: $colorBase
+  color: $color-base-01
 
   box-shadow: $shadowS
   text-align: center
@@ -66,7 +66,7 @@
   background-color: $colorSnow40
 
 .ui-iconbox-mark-green
-  background: $colorAction
+  background: $color-green-02
   color: $colorSnow00
   blockRound(10px)
 
