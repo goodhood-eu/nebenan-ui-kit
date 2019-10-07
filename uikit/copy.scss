@@ -1,109 +1,129 @@
 // Headline
-h1, .ui-h1,
-h2, .ui-h2,
-h3, .ui-h3,
-h4, .ui-h4
-  word-wrap: break-word
+h1,
+.ui-h1,
+h2,
+.ui-h2,
+h3,
+.ui-h3,
+h4,
+.ui-h4 {
+  word-wrap: break-word;
+}
 
 h1,
-.ui-h1
-  display: block
-  font-size: 25px
-  line-height: 32px
-  font-weight: $fontWeightM
-  color: $color-gray-00
-  text-transform: none
+.ui-h1 {
+  display: block;
+  font-size: 25px;
+  line-height: 32px;
+  font-weight: $font-weight-m;
+  color: $color-gray-00;
+  text-transform: none;
+}
 
 h2,
-.ui-h2
-  display: block
-  font-size: 20px
-  line-height: 26px
-  font-weight: $fontWeightM
-  color: $color-gray-00
-  text-transform: none
+.ui-h2 {
+  display: block;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: $font-weight-m;
+  color: $color-gray-00;
+  text-transform: none;
+}
 
 h3,
-.ui-h3
-  font-size: 17px
-  line-height: 24px
-  font-weight: $fontWeightL
-  color: $color-gray-00
-  text-transform: none
+.ui-h3 {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: $font-weight-l;
+  color: $color-gray-00;
+  text-transform: none;
+}
 
 h4,
-.ui-h4
-  display: block
-  font-size: $fontSizeM
-  line-height: 18px
-  font-weight: $fontWeightL
-  color: $color-gray-00
-  text-transform: uppercase
+.ui-h4 {
+  display: block;
+  font-size: $font-size-m;
+  line-height: 18px;
+  font-weight: $font-weight-l;
+  color: $color-gray-00;
+  text-transform: uppercase;
+}
 
 // Copy
 body,
 select,
 input,
 button,
-textarea
-  font: normal $fontSizeM/$lineHeightM $fontFamily
-  color: $color-gray-02
+textarea {
+  font: normal $font-size-m/$line-height-m $font-family;
+  color: $color-gray-02;
+}
 
 small,
-.ui-small
-  font-size: $fontSizeS
+.ui-small {
+  font-size: $font-size-s;
+}
 
 strong,
-.ui-strong
-  font-weight: $fontWeightL
+.ui-strong {
+  font-weight: $font-weight-l;
+}
 
 // Link
 a,
-.ui-link
-  color: $color-base-01
-  text-decoration: none
-  cursor: pointer
-  pointer-events: auto
+.ui-link {
+  color: $color-base-01;
+  text-decoration: none;
+  cursor: pointer;
+  pointer-events: auto;
 
-  &:visited
-    color: $color-base-01
+  &:visited {
+    color: $color-base-01;
+  }
 
   &:active,
-  &:hover
-    color: $color-gray-01
+  &:hover {
+    color: $color-gray-01;
+  }
 
-  &.is-disabled
-    color: $color-gray-05
-    cursor: auto
+  &.is-disabled {
+    color: $color-gray-05;
+    cursor: auto;
+  }
+}
 
 // Label
-.ui-label
-  color: $color-gray-00
-  font-size: 12px
-  line-height: 15px
-  font-style: normal
-  font-weight: $fontWeightL
-  user-select: none
+.ui-label {
+  color: $color-gray-00;
+  font-size: 12px;
+  line-height: 15px;
+  font-style: normal;
+  font-weight: $font-weight-l;
+  user-select: none;
+}
 
-.ui-label-primary
-  color: $color-gray-02
-  font-size: $fontSizeM
-  line-height: $lineHeightM
+.ui-label-primary {
+  color: $color-gray-02;
+  font-size: $font-size-m;
+  line-height: $line-height-m;
+}
 
 // Error
-.ui-error
-  display: block
-  color: $color-orange-01
-  font-size: $fontSizeM
-  line-height: $lineHeightM
-  font-style: normal
-  font-weight: $fontWeightL
+.ui-error {
+  display: block;
+  color: $color-orange-01;
+  font-size: $font-size-m;
+  line-height: $line-height-m;
+  font-style: normal;
+  font-weight: $font-weight-l;
+}
 
 // Success message
-.ui-success
-  display: block
-  color: $color-green-02
-  font-size: $fontSizeM
-  line-height: $lineHeightM
-  font-style: normal
-  font-weight: $fontWeightL
+.ui-success {
+  display: block;
+  color: $color-green-02;
+  font-size: $font-size-m;
+  line-height: $line-height-m;
+  font-style: normal;
+  font-weight: $font-weight-l;
+}

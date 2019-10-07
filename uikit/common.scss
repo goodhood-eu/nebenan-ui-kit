@@ -1,36 +1,49 @@
-.ui-section
-  margin-top: 15px
-  padding-top: 15px
-  display: block
-  border-top: $borderSnow
+.ui-section {
+  margin-top: 15px;
+  padding-top: 15px;
+  display: block;
+  border-top: $border-light;
+}
 
-.ui-section_list
-  > li
-    padding: 15px 0
-    border-top: $borderSnow
+.ui-section_list {
+  > li {
+    padding: 15px 0;
+    border-top: $border-light;
 
-    &:first-child
-      padding-top: 0
-      border-top: none
-    &:last-child
-      padding-bottom: 0
+    &:first-child {
+      padding-top: 0;
+      border-top: none;
+    }
 
-.ui-controls
-  overflow: hidden
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
 
-  .ui-button
-    margin-top: 0
-    float: right
+.ui-controls {
+  overflow: hidden;
 
-    &:not(.ui-button-small):not(.ui-button-wide)
-      width: 100%
-      @media ($mediaM)
-        width: auto
+  .ui-button {
+    margin-top: 0;
+    float: right;
+
+    &:not(.ui-button-small):not(.ui-button-wide) {
+      width: 100%;
+
+      @media ($media-m) {
+        width: auto;
+      }
+    }
+  }
 
   a,
-  .ui-link
-    margin-top: 10px
-    display: inline-block
+  .ui-link {
+    margin-top: 10px;
+    display: inline-block;
 
-    &:only-child
-      margin-top: 0
+    &:only-child {
+      margin-top: 0;
+    }
+  }
+}

@@ -1,53 +1,65 @@
-.ui-tag
-  padding: 4px 12px
-  display: inline-block
+.ui-tag {
+  padding: 4px 12px;
+  display: inline-block;
 
-  font-size: 12px
-  font-weight: $fontWeightL
-  color: $color-gray-00
+  font-size: 12px;
+  font-weight: $font-weight-l;
+  color: $color-gray-00;
 
-  cursor: pointer
-  border: 1px solid
-  border-radius: 30px
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 30px;
 
-  a&
-    color: @color
+  @at-root a#{&} {
+    color: $color-gray-00;
+  }
+}
 
-.ui-tag-removable > i
-  margin-left: 10px
-  font-size: 10px
-  cursor: pointer
+.ui-tag-removable > i {
+  margin-left: 10px;
+  font-size: 10px;
+  cursor: pointer;
+}
 
-.ui-tag-primary
-  background-color: $color-green-04
-  border-color: $color-green-02
+.ui-tag-primary {
+  background-color: $color-green-04;
+  border-color: $color-green-02;
 
-  > i
-    color: $color-green-00
+  > i {
+    color: $color-green-00;
+  }
+}
 
-.ui-tag-secondary
-  background-color: $color-gray-08
-  border-color: $color-gray-05
+.ui-tag-secondary {
+  background-color: $color-gray-08;
+  border-color: $color-gray-05;
 
-  &:hover
-    background-color: $color-gray-07
+  &:hover {
+    background-color: $color-gray-07;
+  }
+}
 
-.ui-tag-tertiary
-  background-color: $color-green-05
-  border-color: $color-green-02
+.ui-tag-tertiary {
+  background-color: $color-green-05;
+  border-color: $color-green-02;
 
-  > i
-    color: $color-green-02
+  > i {
+    color: $color-green-02;
+  }
+}
 
-.ui-tag-small
-  padding: 0 12px
-  line-height: 18px
+.ui-tag-small {
+  padding: 0 12px;
+  line-height: 18px;
+}
 
 .ui-tag[disabled],
-.ui-tag.is-disabled
-  background-color: $color-gray-07
-  border-color: $color-gray-05
-  color: $color-base-01
+.ui-tag.is-disabled {
+  background-color: $color-gray-07;
+  border-color: $color-gray-05;
+  color: $color-base-01;
 
-  > i
-    color: @color
+  > i {
+    color: $color-base-01;
+  }
+}

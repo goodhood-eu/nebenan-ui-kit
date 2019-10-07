@@ -1,74 +1,90 @@
-.ui-iconbox-info
-  width: 35px
-  display: inline-block
+.ui-iconbox-info {
+  width: 35px;
+  display: inline-block;
 
-  color: $color-gray-09
-  font-size: 19px
-  line-height: @width
-  text-align: center
-  &:before
-    margin-left: -.1em
+  color: $color-gray-09;
+  font-size: 19px;
+  line-height: 35px;
+  text-align: center;
 
-  background: $color-green-02
-  border-radius: 50%
-  border-bottom-left-radius: 0
+  background: $color-green-02;
+  border-radius: 50%;
+  border-bottom-left-radius: 0;
 
-.ui-iconbox-info-small
-  width: 28px
-  font-size: 15px
-  line-height: 25px
+  &::before {
+    margin-left: -.1em;
+  }
+}
 
-.ui-iconbox-info-mini
-  width: 18px
-  font-size: 10px
-  line-height: 16px
+.ui-iconbox-info-small {
+  width: 28px;
+  font-size: 15px;
+  line-height: 25px;
+}
 
-.ui-iconbox-label
-  width: 50px
-  height: @width
-  display: inline-block
+.ui-iconbox-info-mini {
+  width: 18px;
+  font-size: 10px;
+  line-height: 16px;
+}
 
-  border-radius: $borderRadiusS
+.ui-iconbox-label {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
 
-  background: $color-green-02
-  text-align: center
-  color: $color-gray-09
+  border-radius: $border-radius-s;
 
-.ui-iconbox-remove
-  $size = 18px
-  blockRound($size)
+  background: $color-green-02;
+  text-align: center;
+  color: $color-gray-09;
+}
 
-  background: $color-gray-08
-  color: $color-base-01
+.ui-iconbox-remove {
+  $_size: 18px;
 
-  box-shadow: $shadowS
-  text-align: center
-  cursor: pointer
+  @include block-round($_size);
 
-  i
-    iconSize(11px)
-    vertical-align: top
-    line-height: $size
+  background: $color-gray-08;
+  color: $color-base-01;
 
-.ui-iconbox-remove-small
-  $size = 16px
-  blockRound($size)
+  box-shadow: $shadow-bottom-default;
+  text-align: center;
+  cursor: pointer;
 
-  i
-    iconSize(9px)
-    line-height: $size
+  i {
+    @include icon-size(11px);
+    vertical-align: top;
+    line-height: $_size;
+  }
+}
 
-.ui-iconbox-warning
-  display: inline-block
-  line-height: 0 // fix height for small sizes
-  border-radius: 50%
-  color: $color-orange-01
-  background-color: $color-gray-08
+.ui-iconbox-remove-small {
+  $_size: 16px;
 
-.ui-iconbox-mark-green
-  background: $color-green-02
-  color: $color-gray-09
-  blockRound(10px)
+  @include block-round($_size);
+
+  i {
+    @include icon-size(9px);
+    line-height: $_size;
+  }
+}
+
+.ui-iconbox-warning {
+  display: inline-block;
+  // fix height for small sizes
+  line-height: 0;
+  border-radius: 50%;
+  color: $color-orange-01;
+  background-color: $color-gray-08;
+}
+
+.ui-iconbox-mark-green {
+  background: $color-green-02;
+  color: $color-gray-09;
+
+  @include block-round(10px);
+}
 
 h1,
 .ui-h1,
@@ -77,11 +93,13 @@ h2,
 h3,
 .ui-h3,
 h4,
-.ui-h4
-  overflow: hidden
+.ui-h4 {
+  overflow: hidden;
 
   .ui-iconbox-info,
   .ui-iconbox-info-mini,
-  .ui-iconbox-info-small
-    float: right
-    cursor: pointer
+  .ui-iconbox-info-small {
+    float: right;
+    cursor: pointer;
+  }
+}

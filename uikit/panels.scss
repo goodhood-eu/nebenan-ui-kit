@@ -1,20 +1,24 @@
-.ui-panel
-  padding: 10px
-  display: block
-  border: 1px solid
-  border-radius: $borderRadiusM
+.ui-panel {
+  padding: 10px;
+  display: block;
+  border: 1px solid;
+  border-radius: $border-radius-m;
+}
 
-.ui-panel-primary
-  background: $color-green-04
-  border-color: $color-green-01
-  color: $color-gray-01
+.ui-panel-primary {
+  background: $color-green-04;
+  border-color: $color-green-01;
+  color: $color-gray-01;
+}
 
-.ui-panel-secondary
-  background: $color-base-01
-  border-color: $color-base-01
-  color: $color-gray-09
+.ui-panel-secondary {
+  background: $color-base-01;
+  border-color: $color-base-01;
+  color: $color-gray-09;
+}
 
-.ui-panel-danger
-  background: $color-orange-02
-  border-color: $color-orange-01
-  color: $color-gray-01
+.ui-panel-danger {
+  background: $color-orange-02;
+  border-color: $color-orange-01;
+  color: $color-gray-01;
+}

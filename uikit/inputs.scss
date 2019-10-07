@@ -1,35 +1,40 @@
-.ui-input
-  width: 100%
-  height: 40px
-  padding: 0 15px
-  display: block
+.ui-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  display: block;
 
-  font-size: $fontSizeM
-  font-weight: $fontWeightM
-  color: $color-gray-00
+  font-size: $font-size-m;
+  font-weight: $font-weight-m;
+  color: $color-gray-00;
 
-  border: 1px solid $color-gray-05
-  border-radius: $borderRadiusM
+  border: 1px solid $color-gray-05;
+  border-radius: $border-radius-m;
 
-  background: $color-gray-08
+  background: $color-gray-08;
 
-  &::placeholder
-    color: $color-gray-02
+  &::placeholder {
+    color: $color-gray-02;
+  }
 
-  span&
-    min-height: 40px
-    width: auto
-    height: auto
-    padding: 9px 15px
-    color: $color-gray-02
-    word-wrap: break-word
+  @at-root span#{&} {
+    min-height: 40px;
+    width: auto;
+    height: auto;
+    padding: 9px 15px;
+    color: $color-gray-02;
+    word-wrap: break-word;
+  }
 
-  textarea&
-    min-height: 80px
-    padding: 9px 15px
-    display: block
-    overflow: hidden
-    resize: none
+  @at-root textarea#{&} {
+    min-height: 80px;
+    padding: 9px 15px;
+    display: block;
+    overflow: hidden;
+    resize: none;
+  }
+}
 
-.ui-input-error
-  border-color: $color-orange-01
+.ui-input-error {
+  border-color: $color-orange-01;
+}

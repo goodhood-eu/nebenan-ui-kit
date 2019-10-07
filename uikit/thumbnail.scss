@@ -1,30 +1,35 @@
-.ui-thumbnail
-  width: $thumbnailM
-  height: @width
+.ui-thumbnail {
+  width: $thumbnail-m;
+  height: $thumbnail-m;
 
-  display: inline-block
+  display: inline-block;
 
-  backgroundFill()
-  background-color: $color-gray-07
-  border-radius: $borderRadiusM
-  border: $borderDark
+  @include background-fill;
+  background-color: $color-gray-07;
+  border-radius: $border-radius-m;
+  border: $border-dark;
 
-  line-height: @height
-  text-align: center
+  line-height: $thumbnail-m;
+  text-align: center;
+}
 
-.ui-thumbnail-small
-  blockRound($thumbnailS)
-  line-height: @height
+.ui-thumbnail-small {
+  @include block-round($thumbnail-s);
+  line-height: $thumbnail-s;
+}
 
-.ui-thumbnail-mini
-  blockRound($thumbnailXS)
-  line-height: @height
+.ui-thumbnail-mini {
+  @include block-round($thumbnail-xs);
+  line-height: $thumbnail-xs;
+}
 
-.ui-thumbnail-responsive
-  blockResponsive()
-  width: auto
-  height: auto
+.ui-thumbnail-responsive {
+  @include block-responsive;
+  width: auto;
+  height: auto;
+}
 
-.ui-thumbnail-bg
-  backgroundFill()
-  textInvisible()
+.ui-thumbnail-bg {
+  @include background-fill;
+  @include text-invisible;
+}

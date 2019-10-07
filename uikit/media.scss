@@ -1,28 +1,37 @@
-.ui-media
-  clearfix()
+.ui-media {
+  @include clearfix;
 
-  > .ui-media-image
-    width: $thumbnailM
-    height: @width
-    display: block
-    float: left
+  > .ui-media-image {
+    width: $thumbnail-m;
+    height: $thumbnail-m;
+    display: block;
+    float: left;
+  }
 
-  > .ui-media-content
-    margin-left: $thumbnailM + 10px
-    display: block
+  > .ui-media-content {
+    margin-left: $thumbnail-m + 10px;
+    display: block;
+  }
+}
 
-.ui-media-small
-  > .ui-media-image
-    width: $thumbnailS
-    height: @width
+.ui-media-small {
+  > .ui-media-image {
+    width: $thumbnail-s;
+    height: $thumbnail-s;
+  }
 
-  > .ui-media-content
-    margin-left: $thumbnailS + 10px
+  > .ui-media-content {
+    margin-left: $thumbnail-s + 10px;
+  }
+}
 
-.ui-media-mini
-  > .ui-media-image
-    width: $thumbnailXS
-    height: @width
+.ui-media-mini {
+  > .ui-media-image {
+    width: $thumbnail-xs;
+    height: $thumbnail-xs;
+  }
 
-  > .ui-media-content
-    margin-left: $thumbnailXS + 10px
+  > .ui-media-content {
+    margin-left: $thumbnail-xs + 10px;
+  }
+}

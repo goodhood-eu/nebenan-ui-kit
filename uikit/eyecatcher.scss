@@ -1,27 +1,31 @@
-.ui-eyecatcher
-  display: inline-block
+.ui-eyecatcher {
+  padding: 9px 20px;
+  display: inline-block;
 
-  padding: 9px 20px
+  color: $color-gray-09;
+  text-align: center;
+  font-weight: $font-weight-l;
+  font-size: $font-size-s;
+  line-height: 12px;
 
-  color: $color-gray-09
-  text-align: center
-  font-weight: $fontWeighL
-  font-size: $fontSizeS
-  line-height: 12px
+  border-radius: 100px 100px 100px 0;
+  box-shadow: $shadow-bottom-raised;
 
-  border-radius: 100px 100px 100px 0
-  box-shadow: $shadowL
+  @at-root a#{&} {
+    color: $color-gray-09;
+  }
+}
 
-  a&
-    color: $color-gray-09
+.ui-eyecatcher-primary {
+  text-transform: uppercase;
+  background: $color-green-02;
+}
 
-.ui-eyecatcher-primary
-  text-transform: uppercase
-  background: $color-green-02
+.ui-eyecatcher-danger {
+  border: 3px solid $color-gray-09;
+  background: $color-orange-01;
+}
 
-.ui-eyecatcher-danger
-  border: 3px solid $color-gray-09
-  background: $color-orange-01
-
-.ui-eyecatcher-reverse
-  border-radius: 100px 100px 0 100px
+.ui-eyecatcher-reverse {
+  border-radius: 100px 100px 0 100px;
+}

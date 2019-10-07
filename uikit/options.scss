@@ -1,22 +1,27 @@
-.ui-options
-  overflow: hidden
+.ui-options {
+  overflow: hidden;
 
-  li
-    padding: 10px 15px
-    border-top: $borderDark
-    cursor: pointer
+  li {
+    padding: 10px 15px;
+    border-top: $border-dark;
+    cursor: pointer;
 
-    &:first-child
-      border-top: none
+    &:first-child {
+      border-top: none;
+    }
 
-    &.is-selected
-      background: $color-base-01
-      color: $color-gray-09
+    &.is-selected {
+      background: $color-base-01;
+      color: $color-gray-09;
 
       a,
       .ui-link,
       .ui-label,
-      .ui-label-primary
-        color: inherit
-        font-weight: inherit
-        font-size: inherit
+      .ui-label-primary {
+        color: inherit;
+        font-weight: inherit;
+        font-size: inherit;
+      }
+    }
+  }
+}
