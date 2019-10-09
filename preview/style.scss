@@ -1,5 +1,23 @@
 @import '../styles';
 
+@mixin _text-contrast($clr) {
+  $color-brightness: round((red($clr) * 299) + (green($clr) * 587) + (blue($clr) * 114) / 1000);
+  $light-color: round((red(#fff) * 299) + (green(#fff) * 587) + (blue(#fff) * 114) / 1000);
+  $alpha: alpha($clr);
+
+  @if abs($color-brightness) < ($light-color / 2) and $alpha > .5 {
+    color: #fff;
+  } @else {
+    color: #000;
+  }
+}
+
+@mixin _test-color($color) {
+  background-color: $color;
+
+  @include _text-contrast($color);
+}
+
 html {
   background: $color-gray-07;
 }
@@ -32,6 +50,7 @@ main {
   margin-top: 30px;
 
   ul {
+    margin-top: 30px;
     overflow: hidden;
 
     li {
@@ -39,7 +58,7 @@ main {
       display: block;
 
       @media ($media-m) {
-        width: 33%;
+        width: 50%;
         float: left;
       }
     }
@@ -83,175 +102,175 @@ main {
   }
 
   li.is-color-gray-00 {
-    background-color: $color-gray-00;
+    @include _test-color($color-gray-00);
   }
 
   li.is-color-gray-01 {
-    background-color: $color-gray-01;
+    @include _test-color($color-gray-01);
   }
 
   li.is-color-gray-02 {
-    background-color: $color-gray-02;
+    @include _test-color($color-gray-02);
   }
 
   li.is-color-gray-03 {
-    background-color: $color-gray-03;
+    @include _test-color($color-gray-03);
   }
 
   li.is-color-gray-04 {
-    background-color: $color-gray-04;
+    @include _test-color($color-gray-04);
   }
 
   li.is-color-gray-05 {
-    background-color: $color-gray-05;
+    @include _test-color($color-gray-05);
   }
 
   li.is-color-gray-06 {
-    background-color: $color-gray-06;
+    @include _test-color($color-gray-06);
   }
 
   li.is-color-gray-07 {
-    background-color: $color-gray-07;
+    @include _test-color($color-gray-07);
   }
 
   li.is-color-gray-08 {
-    background-color: $color-gray-08;
+    @include _test-color($color-gray-08);
   }
 
   li.is-color-gray-09 {
-    background-color: $color-gray-09;
+    @include _test-color($color-gray-09);
   }
 
   li.is-color-green-00 {
-    background-color: $color-green-00;
+    @include _test-color($color-green-00);
   }
 
   li.is-color-green-01 {
-    background-color: $color-green-01;
+    @include _test-color($color-green-01);
   }
 
   li.is-color-green-02 {
-    background-color: $color-green-02;
+    @include _test-color($color-green-02);
   }
 
   li.is-color-green-03 {
-    background-color: $color-green-03;
+    @include _test-color($color-green-03);
   }
 
   li.is-color-green-04 {
-    background-color: $color-green-04;
+    @include _test-color($color-green-04);
   }
 
   li.is-color-green-05 {
-    background-color: $color-green-05;
+    @include _test-color($color-green-05);
   }
 
   li.is-color-green-06 {
-    background-color: $color-green-06;
+    @include _test-color($color-green-06);
   }
 
   li.is-color-blue-00 {
-    background-color: $color-blue-00;
+    @include _test-color($color-blue-00);
   }
 
   li.is-color-blue-01 {
-    background-color: $color-blue-01;
+    @include _test-color($color-blue-01);
   }
 
   li.is-color-blue-02 {
-    background-color: $color-blue-02;
+    @include _test-color($color-blue-02);
   }
 
   li.is-color-blue-03 {
-    background-color: $color-blue-03;
+    @include _test-color($color-blue-03);
   }
 
   li.is-color-base-00 {
-    background-color: $color-base-00;
+    @include _test-color($color-base-00);
   }
 
   li.is-color-base-01 {
-    background-color: $color-base-01;
+    @include _test-color($color-base-01);
   }
 
   li.is-color-base-02 {
-    background-color: $color-base-02;
+    @include _test-color($color-base-02);
   }
 
   li.is-color-base-03 {
-    background-color: $color-base-03;
+    @include _test-color($color-base-03);
   }
 
   li.is-color-base-04 {
-    background-color: $color-base-04;
+    @include _test-color($color-base-04);
   }
 
   li.is-color-orange-00 {
-    background-color: $color-orange-00;
+    @include _test-color($color-orange-00);
   }
 
   li.is-color-orange-01 {
-    background-color: $color-orange-01;
+    @include _test-color($color-orange-01);
   }
 
   li.is-color-orange-02 {
-    background-color: $color-orange-02;
+    @include _test-color($color-orange-02);
   }
 
   li.is-color-orange-03 {
-    background-color: $color-orange-03;
+    @include _test-color($color-orange-03);
   }
 
   li.is-color-orange-04 {
-    background-color: $color-orange-04;
+    @include _test-color($color-orange-04);
   }
 
   li.is-color-yellow-00 {
-    background-color: $color-yellow-00;
+    @include _test-color($color-yellow-00);
   }
 
   li.is-color-yellow-01 {
-    background-color: $color-yellow-01;
+    @include _test-color($color-yellow-01);
   }
 
   li.is-color-yellow-02 {
-    background-color: $color-yellow-02;
+    @include _test-color($color-yellow-02);
   }
 
   li.is-color-yellow-03 {
-    background-color: $color-yellow-03;
+    @include _test-color($color-yellow-03);
   }
 
   li.is-color-red-00 {
-    background-color: $color-red-00;
+    @include _test-color($color-red-00);
   }
 
   li.is-color-red-01 {
-    background-color: $color-red-01;
+    @include _test-color($color-red-01);
   }
 
   li.is-color-red-02 {
-    background-color: $color-red-02;
+    @include _test-color($color-red-02);
   }
 
   li.is-color-red-03 {
-    background-color: $color-red-03;
+    @include _test-color($color-red-03);
   }
 
   li.is-color-purple-00 {
-    background-color: $color-purple-00;
+    @include _test-color($color-purple-00);
   }
 
   li.is-color-white-alpha {
-    background-color: $color-white-alpha;
+    @include _test-color($color-white-alpha);
   }
 
   li.is-color-dark-alpha {
-    background-color: $color-dark-alpha;
+    @include _test-color($color-dark-alpha);
   }
 
   li.is-color-transparent {
-    background-color: $color-transparent;
+    @include _test-color($color-transparent);
   }
 }
 
@@ -266,6 +285,7 @@ main {
     padding: 10px;
     flex-grow: 1;
     background: $color-gray-09;
+    border-radius: $border-radius-m;
   }
 
   li.is-shadow-bottom-default {

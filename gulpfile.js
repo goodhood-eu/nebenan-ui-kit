@@ -88,6 +88,9 @@ const watch = () => {
     templates();
   });
 
+  gulp.src('fonts/')
+    .pipe(gulp.symlink(`${COMPILED_LOCATION}/fonts/nebenan-ui-kit`));
+
   return gulp.src(COMPILED_LOCATION)
     .pipe(require('gulp-webserver')({
       port: parseInt(process.env.PORT, 10) || 3000,

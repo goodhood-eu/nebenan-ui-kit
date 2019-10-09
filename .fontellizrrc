@@ -1,0 +1,8 @@
+{
+  "svgsSourceDir": "./.source/svgs",
+  "fontsDestDir": "./public/fonts/fontello",
+  "stylesDestDir": "./vendor/fontello",
+  "fontelloConfig": {
+    "name": "nebenan"
+  }
+}

@@ -6,12 +6,13 @@
 
 // Additional reset
 @import 'reset';
+@import 'fonts';
+@import 'defaults';
 
 // UI-Kit
 @import 'uikit/copy';
 @import 'uikit/buttons';
 @import 'uikit/tags';
-@import 'uikit/text';
 @import 'uikit/inputs';
 @import 'uikit/card';
 @import 'uikit/badge';
