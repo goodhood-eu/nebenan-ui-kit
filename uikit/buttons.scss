@@ -1,5 +1,5 @@
 $_ui-button-height: 40px;
-$_ui-button-height-s: 28px;
+$_ui-button-height-s: 30px;
 
 // Default button styles
 .ui-button {
@@ -16,14 +16,19 @@ $_ui-button-height-s: 28px;
   text-decoration: none;
   text-align: center;
 
-  border: 1px solid;
+  border: none;
   border-radius: $border-radius-m;
+  box-shadow: $shadow-bottom-default;
 
   user-select: none;
   cursor: pointer;
   touch-action: manipulation;
   -webkit-touch-callout: none;
   pointer-events: auto;
+
+  &:active {
+    box-shadow: none;
+  }
 
   @at-root a#{&} {
     color: inherit;
@@ -64,53 +69,67 @@ $_ui-button-height-s: 28px;
 // Colors
 .ui-button-primary {
   background: $color-green-02;
-  border-color: $color-green-02;
   color: $color-gray-09;
 
   @at-root a#{&} {
     color: $color-gray-09;
   }
 
-  &:hover,
+  &:hover {
+    background: $color-green-03;
+  }
+
   &:active,
   &.is-active {
-    background: $color-green-03;
-    border-color: $color-green-03;
+    background: $color-green-02;
   }
 }
 
 .ui-button-secondary {
-  background: $color-gray-08;
-  border-color: $color-gray-05;
-  color: $color-gray-02;
+  background: $color-gray-09;
+  color: $color-base-01;
 
   @at-root a#{&} {
-    color: $color-gray-02;
+    color: $color-base-01;
   }
 
   &:hover,
   &:active,
   &.is-active {
-    background: $color-base-01;
-    border-color: $color-base-01;
-    color: $color-gray-09;
+    background: $color-base-04;
+  }
+}
+
+.ui-button-tertiary {
+  background: $color-green-06;
+  color: $color-green-02;
+
+  @at-root a#{&} {
+    color: $color-green-02;
+  }
+
+  &:hover,
+  &:active,
+  &.is-active {
+    background: $color-base-04;
   }
 }
 
 .ui-button-danger {
   background: $color-orange-01;
-  border-color: $color-orange-01;
   color: $color-gray-09;
 
   @at-root a#{&} {
     color: $color-gray-09;
   }
 
-  &:hover,
+  &:hover {
+    background: $color-orange-02;
+  }
+
   &:active,
   &.is-active {
-    background: $color-orange-02;
-    border-color: $color-orange-02;
+    background: $color-orange-01;
   }
 }
 
@@ -118,10 +137,11 @@ $_ui-button-height-s: 28px;
 .ui-button[disabled],
 .ui-button.is-disabled {
   background: $color-gray-05;
-  border-color: $color-gray-05;
 
   color: $color-gray-09;
   cursor: default;
+
+  box-shadow: none;
 
   @at-root a#{&} {
     color: $color-gray-09;
@@ -131,6 +151,5 @@ $_ui-button-height-s: 28px;
   &:active,
   &.is-active {
     background: $color-gray-05;
-    border-color: $color-gray-05;
   }
 }

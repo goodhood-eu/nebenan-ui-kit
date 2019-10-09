@@ -1,3 +1,4 @@
+@import 'vendor/nebenan-codes';
 
 @font-face {
   font-family: 'Open Sans';
@@ -38,9 +39,9 @@
 @font-face {
   font-family: 'nebenan_icons';
   src:
-    url('/fonts/nebenan.woff') format('woff'),
-    url('/fonts/nebenan.woff2') format('woff2'),
-    url('/fonts/nebenan.ttf') format('truetype');
+    url('/fonts/nebenan-ui-kit/nebenan.woff') format('woff'),
+    url('/fonts/nebenan-ui-kit/nebenan.woff2') format('woff2'),
+    url('/fonts/nebenan-ui-kit/nebenan.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
