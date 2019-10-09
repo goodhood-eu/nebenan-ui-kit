@@ -1,15 +1,14 @@
 .ui-media {
-  @include clearfix;
+  display: flex;
 
   > .ui-media-image {
     width: $thumbnail-m;
     height: $thumbnail-m;
     display: block;
-    float: left;
   }
 
   > .ui-media-content {
-    margin-left: $thumbnail-m + 10px;
+    margin-left: 10px;
     display: block;
   }
 }
@@ -19,19 +18,11 @@
     width: $thumbnail-s;
     height: $thumbnail-s;
   }
-
-  > .ui-media-content {
-    margin-left: $thumbnail-s + 10px;
-  }
 }
 
 .ui-media-mini {
   > .ui-media-image {
     width: $thumbnail-xs;
     height: $thumbnail-xs;
-  }
-
-  > .ui-media-content {
-    margin-left: $thumbnail-xs + 10px;
   }
 }
