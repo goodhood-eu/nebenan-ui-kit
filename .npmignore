@@ -1,9 +1,14 @@
+.source
+compiled
+preview
+vendor/*
+!vendor/nebenan-codes.css
+.browserslistrc
 .eslintignore
 .eslintrc
+.fontellizrrc
 .gitignore
 .npmignore
 .stylelintignore
 .stylelintrc
-compiled
-preview
 gulpfile.js

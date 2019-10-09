@@ -33,3 +33,5 @@ node_modules/*
 .DS_Store
 
 compiled/
+vendor/*
+!vendor/nebenan-codes.css

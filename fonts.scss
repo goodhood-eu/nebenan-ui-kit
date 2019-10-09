@@ -34,3 +34,40 @@
   font-weight: 600;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'nebenan_icons';
+  src:
+    url('/fonts/nebenan.woff') format('woff'),
+    url('/fonts/nebenan.woff2') format('woff2'),
+    url('/fonts/nebenan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^='icon-']::before,
+[class*=' icon-']::before {
+  width: 1em;
+
+  // stylelint-disable-next-line
+  font-family: 'nebenan_icons';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+
+  text-align: center;
+
+  // For safety - reset parent styles, that can break glyph codes
+  font-variant: normal;
+  text-transform: none;
+
+  // fix buttons height, for twitter bootstrap
+  line-height: 1em;
+
+  // Font smoothing. That was taken from TWBS
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
