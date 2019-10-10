@@ -1,1 +1,4 @@
+compiled/
+fonts/
 node_modules/
+vendor/

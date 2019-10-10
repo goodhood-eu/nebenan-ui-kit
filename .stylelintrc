@@ -1,29 +1,3 @@
 {
   "extends": "stylelint-config-nebenan",
-  "rules": {
-    "function-name-case": "lower",
-    "number-leading-zero": "never",
-    "no-descending-specificity": null,
-    "at-rule-empty-line-before": ["always", {
-      except: [
-        "blockless-after-same-name-blockless",
-        "first-nested",
-      ],
-      ignore: ["after-comment"],
-      ignoreAtRules: ["if", "else"]
-    }],
-    "block-closing-brace-newline-after": ["always", {
-      ignoreAtRules: ["if", "else"]
-    }],
-
-    "scss/dollar-variable-pattern": "^[a-z0-9_\\-]+$",
-    "scss/at-function-pattern": "^[a-z0-9_\\-]+$",
-    "scss/at-mixin-pattern": "^[a-z0-9_\\-]+$",
-    "scss/percent-placeholder-pattern": "^we-are-not-using-placeholders-at-this-time$",
-
-    "scss/comment-no-loud": true,
-    "scss/declaration-nested-properties": "never",
-    "scss/at-function-parentheses-space-before": "never",
-    "scss/at-else-if-parentheses-space-before": "never"
-  }
 }
