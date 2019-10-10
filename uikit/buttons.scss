@@ -62,6 +62,15 @@ $_ui-button-height-s: 30px;
   }
 }
 
+.ui-button-narrow {
+  min-width: auto;
+  padding: 0 10px;
+
+  &.ui-button-small {
+    padding: 0 5px;
+  }
+}
+
 .ui-button-icon i {
   margin-left: 8px;
 }
@@ -93,25 +102,31 @@ $_ui-button-height-s: 30px;
     color: $color-base-01;
   }
 
-  &:hover,
+  &:hover {
+    background: $color-base-04;
+  }
+
   &:active,
   &.is-active {
-    background: $color-base-04;
+    background: $color-gray-09;
   }
 }
 
 .ui-button-tertiary {
-  background: $color-green-06;
+  background: $color-gray-09;
   color: $color-green-02;
 
   @at-root a#{&} {
     color: $color-green-02;
   }
 
-  &:hover,
+  &:hover {
+    background: $color-green-06;
+  }
+
   &:active,
   &.is-active {
-    background: $color-base-04;
+    background: $color-gray-09;
   }
 }
 

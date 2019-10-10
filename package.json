@@ -16,9 +16,9 @@
     "start": "gulp"
   },
   "devDependencies": {
-    "autoprefixer": "^9.6.1",
+    "autoprefixer": "^9.6.4",
     "chalk": "^2.4.2",
-    "eslint": "^6.4.0",
+    "eslint": "^6.5.1",
     "eslint-config-nebenan": "^1.0.0",
     "fontellizr": "^1.4.1",
     "gulp": "^4.0.2",
@@ -26,15 +26,16 @@
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.0.2",
     "gulp-webserver": "^0.9.1",
+    "node-sass-glob-importer": "^5.3.2",
     "postcss-flexbugs-fixes": "^4.1.0",
     "promised-del": "^1.0.2",
-    "node-sass": "^4.12.0",
-    "node-sass-glob-importer": "^5.3.2",
-    "sass-functions": "^1.0.1",
+    "sass": "^1.23.0",
+    "sass-functions": "^1.2.0",
     "stylelint": "^11.0.0",
     "stylelint-config-nebenan": "^1.0.0"
   },
   "dependencies": {
+    "gulp-livereload": "^4.0.2",
     "normalize.css": "^8.0.1"
   },
   "peerDependencies": {

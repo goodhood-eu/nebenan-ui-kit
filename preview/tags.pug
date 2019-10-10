@@ -4,53 +4,33 @@ block body
   +header('Tags')
 
   .preview-section
+    h2 Tag colors
+
+    ul
+      li
+        span.ui-tag.ui-tag-primary primary
+      li
+        span.ui-tag.ui-tag-secondary secondary
+      li
+        span.ui-tag.ui-tag-primary.is-disabled disabled
+
+  .preview-section
+    h2 Tag sizes/styles
+
+    ul
+      li
+        span.ui-tag.ui-tag-primary default
+      li
+        span.ui-tag.ui-tag-primary.ui-tag-removable removable
+          i.icon-cross
+
+  .preview-section
+    h2 Elements test
+
     ul
       li
         button.ui-tag.ui-tag-primary &lt;button&gt;
       li
         span.ui-tag.ui-tag-primary &lt;span&gt;
       li
-        span.ui-tag.ui-tag-primary.ui-tag-removable removable x
-      li
-        button.ui-tag.ui-tag-primary.ui-tag-small &lt;button&gt;
-      li
-        span.ui-tag.ui-tag-primary.ui-tag-small &lt;span&gt;
-
-  .preview-section
-    ul
-      li
-        button.ui-tag.ui-tag-secondary &lt;button&gt;
-      li
-        span.ui-tag.ui-tag-secondary &lt;span&gt;
-      li
-        span.ui-tag.ui-tag-secondary.ui-tag-removable removable x
-      li
-        button.ui-tag.ui-tag-secondary.ui-tag-small &lt;button&gt;
-      li
-        span.ui-tag.ui-tag-secondary.ui-tag-small &lt;span&gt;
-
-  .preview-section
-    ul
-      li
-        button.ui-tag.ui-tag-tertiary &lt;button&gt;
-      li
-        span.ui-tag.ui-tag-tertiary &lt;span&gt;
-      li
-        span.ui-tag.ui-tag-tertiary.ui-tag-removable removable x
-      li
-        button.ui-tag.ui-tag-tertiary.ui-tag-small &lt;button&gt;
-      li
-        span.ui-tag.ui-tag-tertiary.ui-tag-small &lt;span&gt;
-
-  .preview-section
-    ul
-      li
-        button.ui-tag.ui-tag-primary(disabled) &lt;button&gt;
-      li
-        span.ui-tag.ui-tag-primary.is-disabled &lt;span&gt;
-      li
-        span.ui-tag.ui-tag-primary.ui-tag-removable.is-disabled removable x
-      li
-        button.ui-tag.ui-tag-primary.ui-tag-small(disabled) &lt;button&gt;
-      li
-        span.ui-tag.ui-tag-primary.ui-tag-small.is-disabled &lt;span&gt;
+        a(href="javascript:void(0);").ui-tag.ui-tag-primary &lt;a&gt;

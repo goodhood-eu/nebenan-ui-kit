@@ -1,8 +1,9 @@
 const gulp = require('gulp');
 const chalk = require('chalk');
 
-const sass = require('node-sass');
+const sass = require('sass');
 const gulpSass = require('gulp-sass');
+const livereload = require('gulp-livereload');
 
 const SOURCE_LOCATION = `${__dirname}/preview`;
 const COMPILED_LOCATION = `${__dirname}/compiled`;
@@ -28,7 +29,7 @@ const styles = () => {
     includePaths: [
       `${__dirname}/node_modules`,
     ],
-    functions: require('sass-functions/replace')(),
+    functions: require('sass-functions/replace')({ sass }),
     importer: require('node-sass-glob-importer')(),
     outputStyle: 'expanded',
     sourceComments: true,
@@ -45,7 +46,8 @@ const styles = () => {
     ]))
     .on('error', errorReporter)
     .pipe(gulp.dest(COMPILED_LOCATION))
-    .on('end', () => benchmarkReporter('Sassified', startTime));
+    .on('end', () => benchmarkReporter('Sassified', startTime))
+    .pipe(livereload());
 };
 
 const templates = () => {
@@ -60,13 +62,13 @@ const templates = () => {
     compileDebug: true,
   };
 
-
   return gulp
     .src(source)
     .pipe(require('gulp-pug')(pugOptions))
     .on('error', errorReporter)
     .pipe(gulp.dest(COMPILED_LOCATION))
-    .on('end', () => benchmarkReporter('Pugified', startTime));
+    .on('end', () => benchmarkReporter('Pugified', startTime))
+    .pipe(livereload());
 };
 
 const watch = () => {
@@ -77,6 +79,8 @@ const watch = () => {
   const templateFiles = [
     `${SOURCE_LOCATION}/**/*.pug`,
   ];
+
+  livereload.listen();
 
   gulp.watch(styleFiles).on('change', (path) => {
     watchReporter(path);
@@ -94,7 +98,7 @@ const watch = () => {
   return gulp.src(COMPILED_LOCATION)
     .pipe(require('gulp-webserver')({
       port: parseInt(process.env.PORT, 10) || 3000,
-      livereload: true,
+      livereload: false,
       directoryListing: {
         enable: true,
         path: COMPILED_LOCATION,
