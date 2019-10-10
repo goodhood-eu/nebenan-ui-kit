@@ -27,7 +27,6 @@
   .ui-button {
     margin-top: 0;
     margin-left: auto;
-    order: 1;
 
     &:not(.ui-button-small):not(.ui-button-wide) {
       width: 100%;
@@ -42,6 +41,7 @@
   .ui-link {
     margin-top: 10px;
     display: inline-block;
+    order: -1;
 
     &:only-child {
       margin-top: 0;
