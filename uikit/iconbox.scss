@@ -1,5 +1,5 @@
 .ui-iconbox-info {
-  width: 35px;
+  width: 38px;
   display: inline-block;
 
   color: $color-gray-09;
@@ -10,6 +10,10 @@
   background: $color-green-02;
   border-radius: 50%;
   border-bottom-left-radius: 0;
+  border: 2px solid;
+  box-shadow: $shadow-bottom-default;
+
+  cursor: pointer;
 
   &::before {
     margin-left: -.1em;
@@ -17,15 +21,35 @@
 }
 
 .ui-iconbox-info-small {
-  width: 28px;
-  font-size: 15px;
-  line-height: 25px;
+  width: 26px;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 .ui-iconbox-info-mini {
   width: 18px;
   font-size: 10px;
   line-height: 16px;
+  border-width: 1px;
+}
+
+h1,
+.ui-h1,
+h2,
+.ui-h2,
+h3,
+.ui-h3,
+h4,
+.ui-h4,
+h5,
+.ui-h5 {
+  display: flex;
+
+  .ui-iconbox-info,
+  .ui-iconbox-info-mini,
+  .ui-iconbox-info-small {
+    margin-left: auto;
+  }
 }
 
 .ui-iconbox-label {
@@ -38,6 +62,11 @@
   background: $color-green-02;
   text-align: center;
   color: $color-gray-09;
+}
+
+.ui-iconbox-label-large {
+  width: 80px;
+  height: 80px;
 }
 
 .ui-iconbox-remove {
@@ -83,25 +112,5 @@
   background: $color-green-02;
   color: $color-gray-09;
 
-  @include block-round(10px);
-}
-
-h1,
-.ui-h1,
-h2,
-.ui-h2,
-h3,
-.ui-h3,
-h4,
-.ui-h4,
-h5,
-.ui-h5 {
-  overflow: hidden;
-
-  .ui-iconbox-info,
-  .ui-iconbox-info-mini,
-  .ui-iconbox-info-small {
-    float: right;
-    cursor: pointer;
-  }
+  @include block-round(16px);
 }

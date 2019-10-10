@@ -7,9 +7,10 @@
   font-weight: $font-weight-l;
   font-size: $font-size-s;
   line-height: 12px;
+  border: 2px solid;
 
   border-radius: 100px 100px 100px 0;
-  box-shadow: $shadow-bottom-raised;
+  box-shadow: $shadow-bottom-default;
 
   @at-root a#{&} {
     color: $color-gray-09;
@@ -17,12 +18,12 @@
 }
 
 .ui-eyecatcher-primary {
-  text-transform: uppercase;
+  border-color: $color-green-00;
   background: $color-green-02;
 }
 
 .ui-eyecatcher-danger {
-  border: 3px solid $color-gray-09;
+  border-color: $color-orange-00;
   background: $color-orange-01;
 }
 

@@ -13,6 +13,20 @@
   text-align: center;
 }
 
+.ui-thumbnail-huge {
+  width: $thumbnail-xl;
+  height: $thumbnail-xl;
+
+  line-height: $thumbnail-xl;
+}
+
+.ui-thumbnail-large {
+  width: $thumbnail-l;
+  height: $thumbnail-l;
+
+  line-height: $thumbnail-l;
+}
+
 .ui-thumbnail-small {
   @include block-round($thumbnail-s);
   line-height: $thumbnail-s;

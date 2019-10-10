@@ -4,20 +4,36 @@ block body
   +header('Misc')
 
   .preview-section
+    h2 Image
+
     ul
       li: img.ui-thumbnail(src=DEMO_IMAGE)
       li: img.ui-thumbnail.ui-thumbnail-small(src=DEMO_IMAGE)
       li: img.ui-thumbnail.ui-thumbnail-mini(src=DEMO_IMAGE)
 
   .preview-section
+    h2 Background
+
     ul
       li: span.ui-thumbnail(style="background-image: url('" + DEMO_IMAGE + "')")
       li: span.ui-thumbnail.ui-thumbnail-small(style="background-image: url('" + DEMO_IMAGE + "')")
       li: span.ui-thumbnail.ui-thumbnail-mini(style="background-image: url('" + DEMO_IMAGE + "')")
 
   .preview-section
-    span.ui-thumbnail.ui-thumbnail-bg(style="background-image: url('" + DEMO_IMAGE + "')")
-      | My secret message will stay secret
+    h2 With hidden text
+
+    ul
+      li: span.ui-thumbnail.ui-thumbnail-bg(style="background-image: url('" + DEMO_IMAGE + "')")
+        | My secret message will stay secret
 
   .preview-section
-    span.ui-thumbnail.ui-thumbnail-responsive(style="background-image: url('" + DEMO_IMAGE + "')")
+    h2 Large sizes
+
+    ul
+      li: img.ui-thumbnail.ui-thumbnail-large(src=DEMO_IMAGE)
+      li: img.ui-thumbnail.ui-thumbnail-huge(src=DEMO_IMAGE)
+
+  .preview-section
+    h2 Responsive size
+    ul
+      li: span.ui-thumbnail.ui-thumbnail-responsive(style="background-image: url('" + DEMO_IMAGE + "')")
