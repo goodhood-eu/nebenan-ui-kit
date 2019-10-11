@@ -1,0 +1,118 @@
+.ui-iconbox-info {
+  width: 38px;
+  display: inline-block;
+
+  color: $color-gray-09;
+  font-size: 19px;
+  line-height: 35px;
+  text-align: center;
+
+  background: $color-green-02;
+  border-radius: 50%;
+  border-bottom-left-radius: 0;
+  border: 2px solid;
+  box-shadow: $shadow-bottom-default;
+  user-select: none;
+
+  cursor: pointer;
+
+  &::before {
+    margin-left: -.1em;
+  }
+}
+
+.ui-iconbox-info-small {
+  width: 26px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.ui-iconbox-info-mini {
+  width: 18px;
+  font-size: 10px;
+  line-height: 16px;
+  border-width: 1px;
+}
+
+h1,
+.ui-h1,
+h2,
+.ui-h2,
+h3,
+.ui-h3,
+h4,
+.ui-h4,
+h5,
+.ui-h5 {
+  display: flex;
+
+  .ui-iconbox-info,
+  .ui-iconbox-info-mini,
+  .ui-iconbox-info-small {
+    margin-left: auto;
+  }
+}
+
+.ui-iconbox-label {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+
+  border-radius: $border-radius-s;
+  box-shadow: $shadow-bottom-default;
+
+  background: $color-green-02;
+  text-align: center;
+  color: $color-gray-09;
+}
+
+.ui-iconbox-label-large {
+  width: 80px;
+  height: 80px;
+}
+
+.ui-iconbox-remove {
+  $_size: 18px;
+
+  @include block-round($_size);
+
+  background: $color-gray-08;
+  color: $color-base-01;
+
+  box-shadow: $shadow-bottom-default;
+  text-align: center;
+  cursor: pointer;
+
+  i {
+    @include icon-size(11px);
+    vertical-align: top;
+    line-height: $_size;
+  }
+}
+
+.ui-iconbox-remove-small {
+  $_size: 16px;
+
+  @include block-round($_size);
+
+  i {
+    @include icon-size(9px);
+    line-height: $_size;
+  }
+}
+
+.ui-iconbox-warning {
+  display: inline-block;
+  // fix height for small sizes
+  line-height: 0;
+  border-radius: 50%;
+  color: $color-orange-01;
+  background-color: $color-gray-08;
+}
+
+.ui-iconbox-mark-green {
+  background: $color-green-02;
+  color: $color-gray-09;
+
+  @include block-round(16px);
+}

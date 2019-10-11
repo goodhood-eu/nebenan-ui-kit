@@ -1,0 +1,49 @@
+.ui-thumbnail {
+  width: $thumbnail-m;
+  height: $thumbnail-m;
+
+  display: inline-block;
+
+  @include background-fill;
+  background-color: $color-gray-07;
+  border-radius: $border-radius-m;
+  border: $border-dark;
+
+  line-height: $thumbnail-m;
+  text-align: center;
+}
+
+.ui-thumbnail-huge {
+  width: $thumbnail-xl;
+  height: $thumbnail-xl;
+
+  line-height: $thumbnail-xl;
+}
+
+.ui-thumbnail-large {
+  width: $thumbnail-l;
+  height: $thumbnail-l;
+
+  line-height: $thumbnail-l;
+}
+
+.ui-thumbnail-small {
+  @include block-round($thumbnail-s);
+  line-height: $thumbnail-s;
+}
+
+.ui-thumbnail-mini {
+  @include block-round($thumbnail-xs);
+  line-height: $thumbnail-xs;
+}
+
+.ui-thumbnail-responsive {
+  @include block-responsive;
+  width: auto;
+  height: auto;
+}
+
+.ui-thumbnail-bg {
+  @include background-fill;
+  @include text-invisible;
+}

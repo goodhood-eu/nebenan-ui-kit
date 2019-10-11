@@ -1,0 +1,170 @@
+$_ui-button-height: 40px;
+$_ui-button-height-s: 30px;
+
+// Default button styles
+.ui-button {
+  min-width: 100px;
+  height: $_ui-button-height;
+
+  padding: 0 30px;
+  display: inline-block;
+
+  font-size: $font-size-m;
+  font-weight: $font-weight-l;
+  line-height: $_ui-button-height;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  border: none;
+  border-radius: $border-radius-m;
+  box-shadow: $shadow-bottom-default;
+
+  user-select: none;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-touch-callout: none;
+  pointer-events: auto;
+
+  &:active {
+    box-shadow: none;
+  }
+
+  @at-root a#{&} {
+    color: inherit;
+  }
+}
+
+// Sizes
+.ui-button-small {
+  min-width: 80px;
+  height: $_ui-button-height-s;
+
+  padding: 0 20px;
+
+  font-size: 12px;
+  line-height: $_ui-button-height-s;
+  text-transform: none;
+
+  border-radius: $border-radius-s;
+}
+
+// Styles
+.ui-button-wide {
+  width: 100%;
+}
+
+.ui-button-round {
+  border-radius: ($_ui-button-height / 2);
+
+  &.ui-button-small {
+    border-radius: ($_ui-button-height-s / 2);
+  }
+}
+
+.ui-button-narrow {
+  min-width: auto;
+  padding: 0 10px;
+
+  &.ui-button-small {
+    padding: 0 5px;
+  }
+}
+
+.ui-button-icon i {
+  margin-left: 8px;
+}
+
+// Colors
+.ui-button-primary {
+  background: $color-green-02;
+  color: $color-gray-09;
+
+  @at-root a#{&} {
+    color: $color-gray-09;
+  }
+
+  &:hover {
+    background: $color-green-03;
+  }
+
+  &:active,
+  &.is-active {
+    background: $color-green-02;
+  }
+}
+
+.ui-button-secondary {
+  background: $color-gray-09;
+  color: $color-base-01;
+
+  @at-root a#{&} {
+    color: $color-base-01;
+  }
+
+  &:hover {
+    background: $color-base-04;
+  }
+
+  &:active,
+  &.is-active {
+    background: $color-gray-09;
+  }
+}
+
+.ui-button-tertiary {
+  background: $color-gray-09;
+  color: $color-green-02;
+
+  @at-root a#{&} {
+    color: $color-green-02;
+  }
+
+  &:hover {
+    background: $color-green-06;
+  }
+
+  &:active,
+  &.is-active {
+    background: $color-gray-09;
+  }
+}
+
+.ui-button-danger {
+  background: $color-orange-01;
+  color: $color-gray-09;
+
+  @at-root a#{&} {
+    color: $color-gray-09;
+  }
+
+  &:hover {
+    background: $color-orange-02;
+  }
+
+  &:active,
+  &.is-active {
+    background: $color-orange-01;
+  }
+}
+
+// At the bottom - overrides defaults
+.ui-button[disabled],
+.ui-button.is-disabled {
+  background: $color-gray-05;
+
+  color: $color-gray-09;
+  cursor: default;
+
+  box-shadow: none;
+
+  @at-root a#{&} {
+    color: $color-gray-09;
+  }
+
+  &:hover,
+  &:active,
+  &.is-active {
+    background: $color-gray-05;
+  }
+}

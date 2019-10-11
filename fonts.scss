@@ -1,0 +1,74 @@
+@import 'vendor/nebenan-codes';
+
+@font-face {
+  font-family: 'Open Sans';
+  src:
+    url('/fonts/nebenan-ui-kit/OpenSans-Light.woff') format('woff'),
+    url('/fonts/nebenan-ui-kit/OpenSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src:
+    url('/fonts/nebenan-ui-kit/OpenSans-Italic.woff') format('woff'),
+    url('/fonts/nebenan-ui-kit/OpenSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src:
+    url('/fonts/nebenan-ui-kit/OpenSans.woff') format('woff'),
+    url('/fonts/nebenan-ui-kit/OpenSans.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src:
+    url('/fonts/nebenan-ui-kit/OpenSans-Semibold.woff') format('woff'),
+    url('/fonts/nebenan-ui-kit/OpenSans-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nebenan_icons';
+  src:
+    url('/fonts/nebenan-ui-kit/nebenan.woff') format('woff'),
+    url('/fonts/nebenan-ui-kit/nebenan.woff2') format('woff2'),
+    url('/fonts/nebenan-ui-kit/nebenan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^='icon-']::before,
+[class*=' icon-']::before {
+  width: 1em;
+
+  // stylelint-disable-next-line
+  font-family: 'nebenan_icons';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+
+  text-align: center;
+
+  // For safety - reset parent styles, that can break glyph codes
+  font-variant: normal;
+  text-transform: none;
+
+  // fix buttons height, for twitter bootstrap
+  line-height: 1em;
+
+  // Font smoothing. That was taken from TWBS
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

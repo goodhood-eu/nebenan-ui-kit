@@ -1,0 +1,156 @@
+// Headline
+h1,
+.ui-h1,
+h2,
+.ui-h2,
+h3,
+.ui-h3,
+h4,
+.ui-h4,
+h5,
+.ui-h5 {
+  display: block;
+  word-wrap: break-word;
+  color: $color-gray-00;
+  text-transform: none;
+}
+
+h1,
+.ui-h1 {
+  font-size: $heading-size-1;
+  line-height: $heading-size-1 * 1.3;
+  font-weight: $heading-weight-1;
+}
+
+h2,
+.ui-h2 {
+  font-size: $heading-size-2;
+  line-height: $heading-size-2 * 1.3;
+  font-weight: $heading-weight-2;
+}
+
+h3,
+.ui-h3 {
+  font-size: $heading-size-3;
+  line-height: $heading-size-3 * 1.3;
+  font-weight: $heading-weight-3;
+}
+
+h4,
+.ui-h4 {
+  font-size: $heading-size-4;
+  line-height: $heading-size-4 * 1.3;
+  font-weight: $heading-weight-4;
+}
+
+h5,
+.ui-h5 {
+  font-size: $heading-size-5;
+  line-height: $heading-size-5 * 1.3;
+  font-weight: $heading-weight-5;
+}
+
+.ui-subtitle {
+  display: block;
+  word-wrap: break-word;
+  font-size: $font-size-m;
+  line-height: 18px;
+  font-weight: $font-weight-l;
+  color: $color-gray-00;
+  text-transform: uppercase;
+}
+
+// Copy
+body,
+select,
+input,
+button,
+textarea {
+  font: normal #{$font-size-m}/#{$line-height-m} $font-family;
+  color: $color-gray-02;
+}
+
+small,
+.ui-small {
+  font-size: $font-size-s;
+}
+
+strong,
+.ui-strong {
+  font-weight: $font-weight-l;
+}
+
+// Link
+a,
+.ui-link {
+  color: $color-base-01;
+  text-decoration: none;
+  cursor: pointer;
+  pointer-events: auto;
+
+  &:visited {
+    color: $color-base-01;
+  }
+
+  &:active,
+  &:hover {
+    color: $color-gray-01;
+  }
+
+  &.is-disabled {
+    color: $color-gray-05;
+    cursor: auto;
+  }
+}
+
+// Label
+.ui-label {
+  color: $color-gray-00;
+  font-size: 12px;
+  line-height: 15px;
+  font-style: normal;
+  font-weight: $font-weight-l;
+  user-select: none;
+}
+
+.ui-label-primary {
+  color: $color-gray-02;
+  font-size: $font-size-m;
+  line-height: $line-height-m;
+}
+
+// Error
+.ui-error {
+  display: block;
+  color: $color-orange-01;
+  font-size: $font-size-m;
+  line-height: $line-height-m;
+  font-style: normal;
+  font-weight: $font-weight-l;
+}
+
+// Success message
+.ui-success {
+  display: block;
+  color: $color-green-02;
+  font-size: $font-size-m;
+  line-height: $line-height-m;
+  font-style: normal;
+  font-weight: $font-weight-l;
+}
+
+.ui-text-dark {
+  color: $color-gray-00;
+}
+
+.ui-text-light {
+  color: $color-gray-03;
+}
+
+.ui-text-success {
+  color: $color-green-02;
+}
+
+.ui-text-error {
+  color: $color-orange-01;
+}

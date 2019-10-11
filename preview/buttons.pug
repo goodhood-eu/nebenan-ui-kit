@@ -4,84 +4,53 @@ block body
   +header('Buttons')
 
   .preview-section
+    h2 Button colors
+
+    ul
+      li
+        span.ui-button.ui-button-primary primary
+      li
+        span.ui-button.ui-button-danger danger
+      li
+        span.ui-button.ui-button-secondary secondary
+      li
+        span.ui-button.ui-button-tertiary tertiary
+      li
+        span.ui-button.ui-button-danger.is-disabled disabled
+
+  .preview-section
+    h2 Button sizes/styles
+
+    ul
+      li
+        span.ui-button.ui-button-primary default
+      li
+        span.ui-button.ui-button-primary.ui-button-small small
+      li
+        span.ui-button.ui-button-primary.ui-button-narrow narrow
+      li
+        span.ui-button.ui-button-primary.ui-button-small.ui-button-narrow small + narrow
+      li
+        span.ui-button.ui-button-primary.ui-button-narrow
+          i.icon-magnifier
+      li
+        span.ui-button.ui-button-primary.ui-button-small.ui-button-narrow
+          i.icon-magnifier
+      li
+        span.ui-button.ui-button-primary.ui-button-round round
+      li
+        span.ui-button.ui-button-primary.ui-button-round.ui-button-small small + round
+
+      li
+        span.ui-button.ui-button-primary.ui-button-wide wide
+
+  .preview-section
+    h2 Elements test
+
     ul
       li
         button.ui-button.ui-button-primary &lt;button&gt;
       li
         span.ui-button.ui-button-primary &lt;span&gt;
       li
-        a(href="#").ui-button.ui-button-primary &lt;a&gt;
-    ul
-      li
-        button.ui-button.ui-button-primary.ui-button-small &lt;button&gt;
-      li
-        span.ui-button.ui-button-primary.ui-button-small &lt;span&gt;
-      li
-        a(href="#").ui-button.ui-button-primary.ui-button-small &lt;a&gt;
-    ul
-      li
-        button.ui-button.ui-button-primary.ui-button-small.ui-button-round &lt;button&gt;
-      li
-        span.ui-button.ui-button-primary.ui-button-small.ui-button-round &lt;span&gt;
-      li
-        a(href="#").ui-button.ui-button-primary.ui-button-small.ui-button-round &lt;a&gt;
-    ul
-      li
-        button.ui-button.ui-button-primary(disabled) [disabled]
-      li
-        span.ui-button.ui-button-primary.is-disabled .disabled
-      li
-        a(href="#").ui-button.ui-button-primary.ui-button-wide .wide
-
-  .preview-section
-    ul
-      li
-        button.ui-button.ui-button-secondary &lt;button&gt;
-      li
-        span.ui-button.ui-button-secondary &lt;span&gt;
-      li
-        a(href="#").ui-button.ui-button-secondary &lt;a&gt;
-    ul
-      li
-        button.ui-button.ui-button-secondary.ui-button-round &lt;button&gt;
-      li
-        span.ui-button.ui-button-secondary.ui-button-round &lt;span&gt;
-      li
-        a(href="#").ui-button.ui-button-secondary.ui-button-round &lt;a&gt;
-    ul
-      li
-        button.ui-button.ui-button-secondary.ui-button-small &lt;button&gt;
-      li
-        span.ui-button.ui-button-secondary.ui-button-small &lt;span&gt;
-      li
-        a(href="#").ui-button.ui-button-secondary.ui-button-small &lt;a&gt;
-    ul
-      li
-        button.ui-button.ui-button-secondary(disabled) [disabled]
-      li
-        span.ui-button.ui-button-secondary.is-disabled .disabled
-      li
-        a(href="#").ui-button.ui-button-secondary.ui-button-wide .wide
-
-  .preview-section
-    ul
-      li
-        button.ui-button.ui-button-danger &lt;button&gt;
-      li
-        span.ui-button.ui-button-danger &lt;span&gt;
-      li
-        a(href="#").ui-button.ui-button-danger &lt;a&gt;
-    ul
-      li
-        button.ui-button.ui-button-danger.ui-button-small &lt;button&gt;
-      li
-        span.ui-button.ui-button-danger.ui-button-small &lt;span&gt;
-      li
-        a(href="#").ui-button.ui-button-danger.ui-button-small &lt;a&gt;
-    ul
-      li
-        button.ui-button.ui-button-danger(disabled) [disabled]
-      li
-        span.ui-button.ui-button-danger.is-disabled .disabled
-      li
-        a(href="#").ui-button.ui-button-danger.ui-button-wide .wide
+        a(href="javascript:void(0);").ui-button.ui-button-primary &lt;a&gt;

@@ -1,0 +1,78 @@
+.ui-tag {
+  padding: 4px 12px;
+  display: inline-block;
+
+  font-size: 12px;
+  font-weight: $font-weight-l;
+
+  text-decoration: none;
+  text-align: center;
+
+  border: 1px solid;
+  border-radius: 30px;
+
+  user-select: none;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-touch-callout: none;
+  pointer-events: auto;
+
+  @at-root a#{&} {
+    color: inherit;
+  }
+}
+
+.ui-tag-removable > i {
+  margin-left: 10px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.ui-tag-primary {
+  background-color: $color-green-04;
+  border-color: $color-green-02;
+  color: $color-gray-00;
+
+  &:hover {
+    background-color: $color-green-06;
+    border-color: $color-green-03;
+  }
+
+  &:active,
+  &.is-active {
+    background-color: $color-green-04;
+    border-color: $color-green-02;
+  }
+
+  @at-root a#{&} {
+    color: $color-gray-00;
+  }
+}
+
+.ui-tag-secondary {
+  background-color: $color-gray-08;
+  border-color: $color-gray-05;
+  color: $color-gray-00;
+
+  &:hover {
+    background-color: $color-gray-07;
+  }
+
+  &:active,
+  &.is-active {
+    background-color: $color-gray-08;
+    border-color: $color-gray-05;
+  }
+
+  @at-root a#{&} {
+    color: $color-gray-00;
+  }
+}
+
+.ui-tag[disabled],
+.ui-tag.is-disabled {
+  background-color: $color-gray-07;
+  border-color: $color-gray-04;
+  color: $color-gray-02;
+  cursor: default;
+}

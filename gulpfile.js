@@ -1,6 +1,11 @@
 const gulp = require('gulp');
 const chalk = require('chalk');
 
+const sass = require('sass');
+const gulpSass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
+const livereload = require('gulp-livereload');
+
 const SOURCE_LOCATION = `${__dirname}/preview`;
 const COMPILED_LOCATION = `${__dirname}/compiled`;
 
@@ -21,27 +26,31 @@ const watchReporter = (path) => {
 const styles = () => {
   const startTime = Date.now();
 
-  const stylusOptions = {
-    errors: true,
-    sourcemaps: true,
-    paths: [
+  const sassOptions = {
+    includePaths: [
       `${__dirname}/node_modules`,
     ],
-    'include css': true,
-    urlfunc: 'embedurl',
-    linenos: true,
+    functions: require('sass-functions')({ sass }),
+    importer: require('node-sass-glob-importer')(),
+    outputStyle: 'expanded',
+    sourceComments: true,
   };
 
+  gulpSass.compiler = sass;
+
   return gulp
-    .src(`${SOURCE_LOCATION}/style.styl`)
-    .pipe(require('gulp-stylus')(stylusOptions))
+    .src(`${SOURCE_LOCATION}/style.scss`)
+    .pipe(sourcemaps.init())
+    .pipe(gulpSass(sassOptions).on('error', gulpSass.logError))
     .pipe(require('gulp-postcss')([
       require('autoprefixer')(),
       require('postcss-flexbugs-fixes'),
     ]))
     .on('error', errorReporter)
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest(COMPILED_LOCATION))
-    .on('end', () => benchmarkReporter('Stylusified', startTime));
+    .on('end', () => benchmarkReporter('Sassified', startTime))
+    .pipe(livereload());
 };
 
 const templates = () => {
@@ -56,23 +65,25 @@ const templates = () => {
     compileDebug: true,
   };
 
-
   return gulp
     .src(source)
     .pipe(require('gulp-pug')(pugOptions))
     .on('error', errorReporter)
     .pipe(gulp.dest(COMPILED_LOCATION))
-    .on('end', () => benchmarkReporter('Pugified', startTime));
+    .on('end', () => benchmarkReporter('Pugified', startTime))
+    .pipe(livereload());
 };
 
 const watch = () => {
   const styleFiles = [
-    './**/*.styl',
+    './**/*.scss',
   ];
 
   const templateFiles = [
     `${SOURCE_LOCATION}/**/*.pug`,
   ];
+
+  livereload.listen();
 
   gulp.watch(styleFiles).on('change', (path) => {
     watchReporter(path);
@@ -84,10 +95,13 @@ const watch = () => {
     templates();
   });
 
+  gulp.src('fonts/')
+    .pipe(gulp.symlink(`${COMPILED_LOCATION}/fonts/nebenan-ui-kit`));
+
   return gulp.src(COMPILED_LOCATION)
     .pipe(require('gulp-webserver')({
       port: parseInt(process.env.PORT, 10) || 3000,
-      livereload: true,
+      livereload: false,
       directoryListing: {
         enable: true,
         path: COMPILED_LOCATION,
@@ -99,7 +113,6 @@ const watch = () => {
       },
     }));
 };
-
 
 gulp.task('clean', () => require('promised-del')([COMPILED_LOCATION]));
 

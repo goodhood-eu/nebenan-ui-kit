@@ -7,31 +7,39 @@
   "homepage": "https://nebenan.de/",
   "repository": "good-hood-gmbh/nebenan-ui-kit",
   "bugs": "https://github.com/good-hood-gmbh/nebenan-ui-kit/issues",
-  "version": "2.6.0",
+  "version": "3.0.0-beta.0",
   "scripts": {
     "reinstall": "rm -rf node_modules package-lock.json && npm install",
-    "lint": "eslint ./ && stylint ./",
+    "lint": "eslint ./ && stylelint \"./*.scss\" \"./**/*.scss\"",
     "prepublishOnly": "npm run lint && echo \"\\033[0;32mReady to publish\\033[0m\"",
     "gulp": "gulp",
     "start": "gulp"
   },
   "devDependencies": {
-    "autoprefixer": "^9.4.3",
-    "chalk": "^2.4.1",
-    "eslint": "^5.10.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "gulp": "^4.0.0",
+    "autoprefixer": "^9.6.4",
+    "chalk": "^2.4.2",
+    "eslint": "^6.5.1",
+    "eslint-config-nebenan": "^1.0.0",
+    "fontellizr": "^1.4.2",
+    "gulp": "^4.0.2",
+    "gulp-livereload": "^4.0.2",
     "gulp-postcss": "^8.0.0",
     "gulp-pug": "^4.0.1",
-    "gulp-stylus": "^2.7.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
     "gulp-webserver": "^0.9.1",
+    "node-sass-glob-importer": "^5.3.2",
     "postcss-flexbugs-fixes": "^4.1.0",
     "promised-del": "^1.0.2",
-    "stylint": "^1.5.9",
-    "stylint-json-reporter": "^0.3.1"
+    "sass": "^1.23.0",
+    "sass-functions": "^1.2.0",
+    "stylelint": "^11.1.1",
+    "stylelint-config-nebenan": "^1.1.0"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
+  },
+  "peerDependencies": {
+    "sass-functions": "^1.2.0"
   }
 }

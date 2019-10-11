@@ -1,0 +1,12 @@
+@mixin cursor-draggable {
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+@mixin prevent-drag {
+  user-select: none;
+  -webkit-user-drag: none;
+}

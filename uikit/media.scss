@@ -1,0 +1,24 @@
+.ui-media {
+  display: flex;
+
+  > .ui-media-image {
+    width: $thumbnail-m;
+    height: $thumbnail-m;
+    display: block;
+  }
+
+  > .ui-media-content {
+    margin-left: 10px;
+    display: block;
+  }
+}
+
+.ui-media-small > .ui-media-image {
+  width: $thumbnail-s;
+  height: $thumbnail-s;
+}
+
+.ui-media-mini > .ui-media-image {
+  width: $thumbnail-xs;
+  height: $thumbnail-xs;
+}

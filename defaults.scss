@@ -1,0 +1,14 @@
+html {
+  background: $color-gray-07;
+  -webkit-tap-highlight-color: $color-transparent;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  @include block-invisible;
+}
+
+input[type='password']::-webkit-auto-fill-button {
+  margin-right: 5px;
+  background: $color-gray-02;
+}

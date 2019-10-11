@@ -1,0 +1,33 @@
+.ui-eyecatcher {
+  padding: 9px 20px;
+  display: inline-block;
+
+  color: $color-gray-09;
+  text-align: center;
+  font-weight: $font-weight-l;
+  font-size: $font-size-s;
+  line-height: 12px;
+  border: 2px solid;
+  user-select: none;
+
+  border-radius: 100px 100px 100px 0;
+  box-shadow: $shadow-bottom-default;
+
+  @at-root a#{&} {
+    color: $color-gray-09;
+  }
+}
+
+.ui-eyecatcher-primary {
+  border-color: $color-green-00;
+  background: $color-green-02;
+}
+
+.ui-eyecatcher-danger {
+  border-color: $color-orange-00;
+  background: $color-orange-01;
+}
+
+.ui-eyecatcher-reverse {
+  border-radius: 100px 100px 0 100px;
+}

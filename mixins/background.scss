@@ -1,0 +1,19 @@
+@mixin background-adaptive($image) {
+  $regex: '\.([a-z]+)$';
+  background-image: url($image);
+
+  @media ($media-m) {
+    background-image: url('#{replace($regex, $image, '-desktop.$1')}');
+  }
+}
+
+@mixin background-fill($type: cover) {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: $type;
+}
+
+@mixin background-fixed($image) {
+  @include background-adaptive($image);
+  background-attachment: fixed;
+}

@@ -1,0 +1,33 @@
+@mixin text-center($selector: null) {
+  text-align: center;
+
+  &::before {
+    height: 100%;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  @if $selector {
+    #{$selector} {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: left;
+    }
+  }
+}
+
+@mixin text-invisible {
+  overflow: hidden;
+  color: transparent !important;
+  text-shadow: none;
+  text-decoration: none;
+  user-select: none;
+  cursor: default;
+}
+
+@mixin text-shortened {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

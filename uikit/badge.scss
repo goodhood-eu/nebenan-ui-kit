@@ -1,0 +1,64 @@
+.ui-badge {
+  min-width: 22px;
+  height: 22px;
+  padding: 0 5px;
+
+  display: inline-block;
+
+  border-radius: 11px;
+
+  font-size: 10px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ui-badge-rect {
+  border-radius: $border-radius-m;
+  box-shadow: $shadow-bottom-default;
+}
+
+.ui-badge-primary {
+  background: $color-green-02;
+  color: $color-gray-09;
+
+  @at-root a#{&} {
+    color: $color-gray-09;
+  }
+}
+
+.ui-badge-secondary {
+  background: $color-base-01;
+  color: $color-gray-09;
+
+  @at-root a#{&} {
+    color: $color-gray-09;
+  }
+}
+
+.ui-badge-signal {
+  background: $color-orange-01;
+  color: $color-gray-09;
+
+  @at-root a#{&} {
+    color: $color-gray-09;
+  }
+}
+
+.ui-badge-blue {
+  background: $color-blue-01;
+  color: $color-gray-09;
+
+  @at-root a#{&} {
+    color: $color-gray-09;
+  }
+}
+
+.ui-badge-disabled {
+  background: $color-gray-02;
+  color: $color-gray-09;
+
+  @at-root a#{&} {
+    color: $color-gray-09;
+  }
+}

@@ -1,0 +1,10 @@
+$layout-content-width: 600px;
+$layout-menu-width: 280px;
+$layout-menu-height: 50px;
+$layout-spacing: 15px;
+
+$layout-sidebar-width: $layout-menu-width + ($layout-spacing * 2);
+$layout-width: $layout-content-width + $layout-sidebar-width;
+
+$layout-width-m: 660px;
+$layout-width-l: 1280px;

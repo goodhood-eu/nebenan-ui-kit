@@ -1,0 +1,16 @@
+.ui-hint {
+  display: block;
+
+  p {
+    margin: 0;
+    display: inline;
+  }
+
+  strong {
+    color: $color-green-02;
+  }
+
+  em {
+    color: $color-gray-02;
+  }
+}
