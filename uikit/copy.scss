@@ -52,6 +52,7 @@ h5,
 
 .ui-subtitle {
   display: block;
+  word-wrap: break-word;
   font-size: $font-size-m;
   line-height: 18px;
   font-weight: $font-weight-l;

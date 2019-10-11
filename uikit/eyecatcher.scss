@@ -8,6 +8,7 @@
   font-size: $font-size-s;
   line-height: 12px;
   border: 2px solid;
+  user-select: none;
 
   border-radius: 100px 100px 100px 0;
   box-shadow: $shadow-bottom-default;

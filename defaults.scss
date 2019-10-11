@@ -5,7 +5,7 @@ html {
 
 input[type='radio'],
 input[type='checkbox'] {
-  @include block-invisible();
+  @include block-invisible;
 }
 
 input[type='password']::-webkit-auto-fill-button {

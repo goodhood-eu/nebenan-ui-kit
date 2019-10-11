@@ -13,16 +13,12 @@
   }
 }
 
-.ui-media-small {
-  > .ui-media-image {
-    width: $thumbnail-s;
-    height: $thumbnail-s;
-  }
+.ui-media-small > .ui-media-image {
+  width: $thumbnail-s;
+  height: $thumbnail-s;
 }
 
-.ui-media-mini {
-  > .ui-media-image {
-    width: $thumbnail-xs;
-    height: $thumbnail-xs;
-  }
+.ui-media-mini > .ui-media-image {
+  width: $thumbnail-xs;
+  height: $thumbnail-xs;
 }

@@ -20,7 +20,7 @@
 
   &::after {
     @include block-responsive(get-image-ratio($image));
-    @include background-fill();
+    @include background-fill;
     content: '';
     background-image: url($image);
   }
