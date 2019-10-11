@@ -3,6 +3,7 @@ const chalk = require('chalk');
 
 const sass = require('sass');
 const gulpSass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
 const livereload = require('gulp-livereload');
 
 const SOURCE_LOCATION = `${__dirname}/preview`;
@@ -29,7 +30,7 @@ const styles = () => {
     includePaths: [
       `${__dirname}/node_modules`,
     ],
-    functions: require('sass-functions/replace')({ sass }),
+    functions: require('sass-functions')({ sass }),
     importer: require('node-sass-glob-importer')(),
     outputStyle: 'expanded',
     sourceComments: true,
@@ -39,12 +40,14 @@ const styles = () => {
 
   return gulp
     .src(`${SOURCE_LOCATION}/style.scss`)
+    .pipe(sourcemaps.init())
     .pipe(gulpSass(sassOptions).on('error', gulpSass.logError))
     .pipe(require('gulp-postcss')([
       require('autoprefixer')(),
       require('postcss-flexbugs-fixes'),
     ]))
     .on('error', errorReporter)
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest(COMPILED_LOCATION))
     .on('end', () => benchmarkReporter('Sassified', startTime))
     .pipe(livereload());
