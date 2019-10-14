@@ -1,15 +1,18 @@
 .ui-media {
   display: flex;
+  flex-wrap: nowrap;
 
   > .ui-media-image {
     width: $thumbnail-m;
     height: $thumbnail-m;
     display: block;
+    flex-shrink: 0;
   }
 
   > .ui-media-content {
     margin-left: 10px;
     display: block;
+    flex-grow: 1;
   }
 }
 

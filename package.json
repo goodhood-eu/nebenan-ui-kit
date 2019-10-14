@@ -7,7 +7,7 @@
   "homepage": "https://nebenan.de/",
   "repository": "good-hood-gmbh/nebenan-ui-kit",
   "bugs": "https://github.com/good-hood-gmbh/nebenan-ui-kit/issues",
-  "version": "3.0.0-beta.0",
+  "version": "3.0.0-beta.1",
   "scripts": {
     "reinstall": "rm -rf node_modules package-lock.json && npm install",
     "lint": "eslint ./ && stylelint \"./*.scss\" \"./**/*.scss\"",
@@ -16,7 +16,7 @@
     "start": "gulp"
   },
   "devDependencies": {
-    "autoprefixer": "^9.6.4",
+    "autoprefixer": "^9.6.5",
     "chalk": "^2.4.2",
     "eslint": "^6.5.1",
     "eslint-config-nebenan": "^1.0.0",
