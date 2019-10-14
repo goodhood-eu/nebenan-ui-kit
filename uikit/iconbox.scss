@@ -44,12 +44,12 @@ h4,
 .ui-h4,
 h5,
 .ui-h5 {
-  display: flex;
+  overflow: hidden;
 
   .ui-iconbox-info,
   .ui-iconbox-info-mini,
   .ui-iconbox-info-small {
-    margin-left: auto;
+    float: right;
   }
 }
 
