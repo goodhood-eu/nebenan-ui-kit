@@ -44,7 +44,7 @@ h4,
 .ui-h4,
 h5,
 .ui-h5 {
-  overflow: hidden;
+  @include legacy-clearfix;
 
   .ui-iconbox-info,
   .ui-iconbox-info-mini,
