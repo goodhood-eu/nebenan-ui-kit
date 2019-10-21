@@ -111,8 +111,7 @@ h5,
 }
 
 .ui-iconbox-mark-green {
+  @include block-round(16px);
   background: $color-green-02;
   color: $color-gray-09;
-
-  @include block-round(16px);
 }

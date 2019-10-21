@@ -13,9 +13,8 @@
 }
 
 @mixin _test-color($color) {
-  background-color: $color;
-
   @include _text-contrast($color);
+  background-color: $color;
 }
 
 html {
