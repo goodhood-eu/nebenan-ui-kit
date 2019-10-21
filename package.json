@@ -20,7 +20,7 @@
     "chalk": "^2.4.2",
     "eslint": "^6.5.1",
     "eslint-config-nebenan": "^1.0.0",
-    "fontellizr": "^1.4.2",
+    "fontellizr": "^1.4.3",
     "gulp": "^4.0.2",
     "gulp-livereload": "^4.0.2",
     "gulp-postcss": "^8.0.0",
