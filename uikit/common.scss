@@ -22,17 +22,11 @@
 }
 
 .ui-controls {
-  display: flex;
-  flex-direction: column-reverse;
-
-  @media ($media-m) {
-    flex-direction: row;
-  }
+  overflow: hidden;
 
   .ui-button {
     margin-top: 0;
-    margin-left: auto;
-    order: 0;
+    float: right;
 
     &:not(.ui-button-small):not(.ui-button-wide) {
       width: 100%;
@@ -46,7 +40,7 @@
   a,
   .ui-link {
     margin-top: 10px;
-    order: -1;
+    display: inline-block;
 
     &:only-child {
       margin-top: 0;
