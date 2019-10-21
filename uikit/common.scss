@@ -23,6 +23,11 @@
 
 .ui-controls {
   display: flex;
+  flex-direction: column-reverse;
+
+  @media ($media-m) {
+    flex-direction: row;
+  }
 
   .ui-button {
     margin-top: 0;
