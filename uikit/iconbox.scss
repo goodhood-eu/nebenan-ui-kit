@@ -41,9 +41,7 @@ h2,
 h3,
 .ui-h3,
 h4,
-.ui-h4,
-h5,
-.ui-h5 {
+.ui-h4 {
   @include legacy-clearfix;
 
   .ui-iconbox-info,

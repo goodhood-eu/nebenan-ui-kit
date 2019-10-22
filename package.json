@@ -7,7 +7,7 @@
   "homepage": "https://nebenan.de/",
   "repository": "good-hood-gmbh/nebenan-ui-kit",
   "bugs": "https://github.com/good-hood-gmbh/nebenan-ui-kit/issues",
-  "version": "3.0.0-beta.6",
+  "version": "3.0.0-beta.7",
   "scripts": {
     "reinstall": "rm -rf node_modules package-lock.json && npm install",
     "lint": "eslint ./ && stylelint \"./*.scss\" \"./**/*.scss\"",
