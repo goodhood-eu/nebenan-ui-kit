@@ -22,7 +22,7 @@
 }
 
 .ui-controls {
-  overflow: hidden;
+  @include legacy-clearfix;
 
   .ui-button {
     margin-top: 0;
