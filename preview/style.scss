@@ -308,3 +308,11 @@ main {
     box-shadow: $shadow-top-raised;
   }
 }
+
+.preview-icons {
+  i {
+    @include icon-size(20px);
+    background: $color-purple-00;
+    color: $color-gray-09;
+  }
+}
