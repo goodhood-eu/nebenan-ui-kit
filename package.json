@@ -7,7 +7,7 @@
   "homepage": "https://nebenan.de/",
   "repository": "good-hood-gmbh/nebenan-ui-kit",
   "bugs": "https://github.com/good-hood-gmbh/nebenan-ui-kit/issues",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "scripts": {
     "reinstall": "rm -rf node_modules package-lock.json && npm install",
     "lint": "eslint ./ && stylelint \"./*.scss\" \"./**/*.scss\"",
@@ -16,10 +16,10 @@
     "start": "gulp"
   },
   "devDependencies": {
-    "autoprefixer": "^9.6.5",
+    "autoprefixer": "^9.7.0",
     "chalk": "^2.4.2",
-    "eslint": "^6.5.1",
-    "eslint-config-nebenan": "^1.0.0",
+    "eslint": "^6.6.0",
+    "eslint-config-nebenan": "^1.0.2",
     "fontellizr": "^1.4.3",
     "gulp": "^4.0.2",
     "gulp-livereload": "^4.0.2",
@@ -32,9 +32,9 @@
     "postcss-flexbugs-fixes": "^4.1.0",
     "promised-del": "^1.0.2",
     "sass": "^1.23.1",
-    "sass-functions": "^1.2.0",
+    "sass-functions": "^1.2.1",
     "stylelint": "^11.1.1",
-    "stylelint-config-nebenan": "^1.4.0"
+    "stylelint-config-nebenan": "^1.4.1"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
