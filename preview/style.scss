@@ -312,6 +312,7 @@ main {
 .preview-icons {
   i {
     @include icon-size(20px);
+    margin-right: 10px;
     background: $color-purple-00;
     color: $color-gray-09;
   }
