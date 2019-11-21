@@ -1,10 +1,10 @@
 .ui-input {
   width: 100%;
-  height: 40px;
+  height: 60px;
   padding: 0 15px;
   display: block;
 
-  font-size: $font-size-m;
+  font-size: 16px;
   font-weight: $font-weight-m;
   color: $color-gray-00;
 
@@ -18,17 +18,17 @@
   }
 
   @at-root span#{&} {
-    min-height: 40px;
+    min-height: 60px;
     width: auto;
     height: auto;
-    padding: 9px 15px;
+    padding: 19px 15px;
     color: $color-gray-02;
     word-wrap: break-word;
   }
 
   @at-root textarea#{&} {
     min-height: 80px;
-    padding: 9px 15px;
+    padding: 19px 15px;
     display: block;
     overflow: hidden;
     resize: none;
