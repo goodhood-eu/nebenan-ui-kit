@@ -39,7 +39,8 @@
   border-color: $color-orange-01;
 }
 
-.ui-input-tip {
-  padding-top: $offset-space;
+.ui-input_tip {
+  padding-top: 2px;
+  display: inline-block;
   font-size: $font-size-s;
 }
