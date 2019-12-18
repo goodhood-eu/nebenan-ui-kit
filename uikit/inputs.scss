@@ -38,3 +38,8 @@
 .ui-input-error {
   border-color: $color-orange-01;
 }
+
+.ui-input-tip {
+  padding-top: $offset-space;
+  font-size: $font-size-s;
+}
