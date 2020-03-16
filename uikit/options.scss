@@ -4,18 +4,9 @@
   li {
     padding: 10px;
     cursor: pointer;
-    background: $color-gray-09;
 
     &:first-child {
       border-top: none;
-    }
-
-    &:nth-of-type(2n) {
-      background: $color-gray-08;
-    }
-
-    &:hover {
-      background: $color-green-06;
     }
 
     &.is-selected {
