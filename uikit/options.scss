@@ -1,7 +1,7 @@
 .ui-options {
   overflow: hidden;
 
-  li {
+  > li {
     padding: 10px;
     cursor: pointer;
     background: $color-gray-09;
