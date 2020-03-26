@@ -33,8 +33,8 @@
     "promised-del": "^1.0.2",
     "sass": "^1.23.7",
     "sass-functions": "^1.3.0",
-    "stylelint": "^11.1.1",
-    "stylelint-config-nebenan": "^1.4.2"
+    "stylelint": "^13.2.1",
+    "stylelint-config-nebenan": "^1.6.0"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
