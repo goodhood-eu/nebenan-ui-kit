@@ -95,20 +95,20 @@ $_ui-button-height-s: 30px;
 }
 
 .ui-button-secondary {
-  background: $color-gray-09;
-  color: $color-base-01;
+  background: $color-green-05;
+  color: $color-green-02;
 
   @at-root a#{&} {
-    color: $color-base-01;
+    color: $color-green-02;
   }
 
   &:hover {
-    background: $color-base-04;
+    background: $color-green-06;
   }
 
   &:active,
   &.is-active {
-    background: $color-gray-09;
+    background: $color-green-05;
   }
 }
 
