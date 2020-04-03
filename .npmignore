@@ -12,3 +12,4 @@ vendor/*
 .stylelintignore
 .stylelintrc
 gulpfile.js
+.idea
