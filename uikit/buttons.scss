@@ -113,7 +113,7 @@ $_ui-button-height-s: 30px;
 }
 
 .ui-button-tertiary {
-  background: $color-gray-09;
+  background: $color-green-05;
   color: $color-green-02;
 
   @at-root a#{&} {
@@ -126,7 +126,7 @@ $_ui-button-height-s: 30px;
 
   &:active,
   &.is-active {
-    background: $color-gray-09;
+    background: $color-green-05;
   }
 }
 
