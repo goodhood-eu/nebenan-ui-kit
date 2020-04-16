@@ -36,12 +36,13 @@
   font-style: normal;
 }
 
+// temporary decache by hand until all projects are using webpack
 @font-face {
   font-family: 'nebenan_icons';
   src:
-    url('/fonts/nebenan-ui-kit/nebenan.woff') format('woff'),
-    url('/fonts/nebenan-ui-kit/nebenan.woff2') format('woff2'),
-    url('/fonts/nebenan-ui-kit/nebenan.ttf') format('truetype');
+    url('/fonts/nebenan-ui-kit/nebenan.woff?tempdecache=v4.6.1') format('woff'),
+    url('/fonts/nebenan-ui-kit/nebenan.woff2?tempdecache=v4.6.1') format('woff2'),
+    url('/fonts/nebenan-ui-kit/nebenan.ttf?tempdecache=v4.6.1') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
