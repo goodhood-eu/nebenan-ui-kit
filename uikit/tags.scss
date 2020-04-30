@@ -33,9 +33,11 @@
   border-color: $color-green-02;
   color: $color-gray-00;
 
-  &:hover {
-    background-color: $color-green-06;
-    border-color: $color-green-03;
+  @media (hover) {
+    &:hover {
+      background-color: $color-green-06;
+      border-color: $color-green-03;
+    }
   }
 
   &:active,
@@ -54,8 +56,10 @@
   border-color: $color-gray-05;
   color: $color-gray-00;
 
-  &:hover {
-    background-color: $color-gray-07;
+  @media (hover) {
+    &:hover {
+      background-color: $color-gray-07;
+    }
   }
 
   &:active,
