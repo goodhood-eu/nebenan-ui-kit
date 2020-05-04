@@ -7,4 +7,5 @@ Basic Nebenan.de UI kit
 
 - Place svg under `/.source/svgs/`
 - Run `npx fontellizr`
+- Update `preview/icons.pug`
 - DONE
