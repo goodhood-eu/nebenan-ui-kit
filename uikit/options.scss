@@ -21,13 +21,14 @@
     &.is-selected {
       background: $color-green-04;
       color: $color-gray-00;
+      font-weight: $font-weight-l;
 
       a,
       .ui-link,
       .ui-label,
       .ui-label-primary {
-        color: inherit;
-        font-weight: inherit;
+        color: $color-gray-01;
+        font-weight: $font-weight-l;
         font-size: inherit;
       }
     }
