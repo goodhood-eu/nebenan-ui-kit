@@ -96,7 +96,7 @@ const watch = () => {
   });
 
   gulp.src('fonts/')
-    .pipe(gulp.symlink(`${COMPILED_LOCATION}/fonts/nebenan-ui-kit`));
+    .pipe(gulp.symlink(`${COMPILED_LOCATION}/fonts`));
 
   return gulp.src(COMPILED_LOCATION)
     .pipe(require('gulp-webserver')({
