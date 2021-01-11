@@ -33,6 +33,10 @@
     overflow: hidden;
     resize: none;
   }
+
+  &[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
 }
 
 .ui-input-error {
