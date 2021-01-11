@@ -7,7 +7,7 @@
   "homepage": "https://nebenan.de/",
   "repository": "good-hood-gmbh/nebenan-ui-kit",
   "bugs": "https://github.com/good-hood-gmbh/nebenan-ui-kit/issues",
-  "version": "4.15.0",
+  "version": "4.15.1",
   "files": [
     "config/*.scss",
     "config/*/*.scss",
@@ -57,6 +57,7 @@
     "stylelint-config-nebenan": "^1.6.2"
   },
   "dependencies": {
+    "@fontsource/open-sans": "^4.1.0",
     "normalize.css": "^8.0.1"
   },
   "peerDependencies": {
