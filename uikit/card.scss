@@ -24,21 +24,3 @@
 .ui-card-gray {
   background: $color-gray-08;
 }
-
-.ui-card-dark {
-  background: $color-base-01;
-  color: $color-gray-09;
-
-  h1,
-  h2,
-  h3,
-  h4 {
-    color: inherit;
-  }
-
-  a,
-  .ui-link {
-    color: inherit;
-    text-decoration: underline;
-  }
-}
