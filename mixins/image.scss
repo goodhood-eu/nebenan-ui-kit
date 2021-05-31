@@ -1,13 +1,15 @@
+@use "sass:math";
+
 @function get-image-size($image) {
   $size: image-size($image);
 
-  @return ('width': map-get($size, 'width') / 2, 'height': map-get($size, 'height') / 2);
+  @return ('width': math.div(map-get($size, 'width'), 2), 'height': math.div(map-get($size, 'height'), 2));
 }
 
 @function get-image-ratio($image) {
   $size: get-image-size($image);
 
-  @return percentage(map-get($size, 'height') / map-get($size, 'width'));
+  @return percentage(math.div(map-get($size, 'height'), map-get($size, 'width')));
 }
 
 @mixin illustration-fluid($image) {

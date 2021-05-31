@@ -1,3 +1,5 @@
+@use "sass:list";
+
 // Headline
 h1,
 .ui-h1,
@@ -57,7 +59,7 @@ select,
 input,
 button,
 textarea {
-  font: normal #{$font-size-m}/#{$line-height-m} $font-family;
+  font: normal list.slash($font-size-m, $line-height-m) $font-family;
   color: $color-gray-02;
 }
 

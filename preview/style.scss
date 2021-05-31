@@ -1,11 +1,12 @@
+@use "sass:math";
 @import '../styles';
 
 @mixin _text-contrast($clr) {
-  $color-brightness: round((red($clr) * 299) + (green($clr) * 587) + (blue($clr) * 114) / 1000);
-  $light-color: round((red(#fff) * 299) + (green(#fff) * 587) + (blue(#fff) * 114) / 1000);
+  $color-brightness: round((red($clr) * 299) + (green($clr) * 587) + math.div(blue($clr) * 114, 1000));
+  $light-color: round((red(#fff) * 299) + (green(#fff) * 587) + math.div(blue(#fff) * 114, 1000));
   $alpha: alpha($clr);
 
-  @if abs($color-brightness) < ($light-color / 2) and $alpha > .5 {
+  @if abs($color-brightness) < math.div($light-color, 2) and $alpha > .5 {
     color: #fff;
   } @else {
     color: #000;

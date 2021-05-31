@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $_ui-button-height: 40px;
 $_ui-button-height-s: 30px;
 
@@ -55,10 +57,10 @@ $_ui-button-height-s: 30px;
 }
 
 .ui-button-round {
-  border-radius: ($_ui-button-height / 2);
+  border-radius: math.div($_ui-button-height, 2);
 
   &.ui-button-small {
-    border-radius: ($_ui-button-height-s / 2);
+    border-radius: math.div($_ui-button-height-s, 2);
   }
 }
 
