@@ -12,6 +12,10 @@
 }
 
 // Invisible, but accessible to screen readers
+// Watch out: If you are using this in scrollable containers which
+// might overflow into each other, set `position: relative` on a parent
+// to make sure your invisible container doesn't appear anywhere outside
+// of the parent element.
 @mixin block-invisible {
   width: 1px;
   height: 1px;
