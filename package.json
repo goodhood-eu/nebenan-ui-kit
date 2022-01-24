@@ -7,7 +7,7 @@
   "homepage": "https://nebenan.de/",
   "repository": "good-hood-gmbh/nebenan-ui-kit",
   "bugs": "https://github.com/good-hood-gmbh/nebenan-ui-kit/issues",
-  "version": "6.3.1",
+  "version": "6.0.0",
   "files": [
     "config/*.scss",
     "config/*/*.scss",
