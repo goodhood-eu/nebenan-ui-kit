@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const chalk = require('chalk');
 
 const sass = require('sass');
-const gulpSass = require('gulp-sass');
+const gulpSass = require('gulp-sass')(sass);
 const sourcemaps = require('gulp-sourcemaps');
 const livereload = require('gulp-livereload');
 
