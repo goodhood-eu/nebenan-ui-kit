@@ -48,3 +48,7 @@
   @include background-fill;
   @include text-invisible;
 }
+
+.ui-thumbnail-round {
+  border-radius: 50%;
+}
