@@ -5,11 +5,12 @@ const sass = require('sass');
 const gulpSass = require('gulp-sass')(sass);
 const sourcemaps = require('gulp-sourcemaps');
 const livereload = require('gulp-livereload');
+const path = require('path');
 
 const SOURCE_LOCATION = `${__dirname}/preview`;
 const COMPILED_LOCATION = `${__dirname}/compiled`;
 
-const pathNormalize = (path) => `${path.replace(`${__dirname}/../`, '')}`;
+const pathNormalize = (filePath) => `${filePath.replace(`${__dirname}/../`, '')}`;
 
 const benchmarkReporter = (action, time) => {
   console.log(chalk.magenta(`${action} in ${((Date.now() - time) / 1000).toFixed(2)}s`));
@@ -19,8 +20,35 @@ const errorReporter = (e) => {
   console.log(chalk.bold.red(`Build error!\n${e.stack || e}`));
 };
 
-const watchReporter = (path) => {
-  console.log(chalk.cyan(`File ${pathNormalize(path)} changed, flexing 💪`));
+const watchReporter = (filePath) => {
+  console.log(chalk.cyan(`File ${pathNormalize(filePath)} changed, flexing 💪`));
+};
+
+const stylesForProduction = () => {
+  const startTime = Date.now();
+
+  const sassOptions = {
+    includePaths: [
+      `${__dirname}/node_modules`,
+    ],
+    functions: require('sass-functions')({ sass }),
+    importer: require('node-sass-glob-importer')(),
+    outputStyle: 'expanded',
+    sourceComments: false,
+  };
+
+  gulpSass.compiler = sass;
+
+  return gulp
+    .src(path.join(__dirname, 'styles.scss'))
+    .pipe(gulpSass(sassOptions).on('error', gulpSass.logError))
+    .pipe(require('gulp-postcss')([
+      require('autoprefixer')(),
+      require('postcss-flexbugs-fixes'),
+    ]))
+    .on('error', errorReporter)
+    .pipe(gulp.dest(__dirname))
+    .on('end', () => benchmarkReporter('Sassified', startTime));
 };
 
 const styles = () => {
@@ -85,13 +113,13 @@ const watch = () => {
 
   livereload.listen();
 
-  gulp.watch(styleFiles).on('change', (path) => {
-    watchReporter(path);
+  gulp.watch(styleFiles).on('change', (filePath) => {
+    watchReporter(filePath);
     styles();
   });
 
-  gulp.watch(templateFiles).on('change', (path) => {
-    watchReporter(path);
+  gulp.watch(templateFiles).on('change', (filePath) => {
+    watchReporter(filePath);
     templates();
   });
 
@@ -117,8 +145,10 @@ const watch = () => {
 gulp.task('clean', () => require('promised-del')([COMPILED_LOCATION]));
 
 gulp.task('styles', styles);
+gulp.task('styles-prod', stylesForProduction);
 gulp.task('templates', templates);
 
 gulp.task('compile', gulp.series('clean', gulp.parallel('styles', 'templates')));
+gulp.task('compile-prod', gulp.series('clean', 'styles-prod'));
 
 gulp.task('default', gulp.series('compile', watch));

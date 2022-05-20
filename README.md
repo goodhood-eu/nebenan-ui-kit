@@ -3,6 +3,50 @@ nebenan-ui-kit
 
 Basic Nebenan.de UI kit
 
+# Usage
+
+## With sass
+
+- First import global css
+
+```scss
+// global.scss
+@import "nebenan-ui-kit/styles";
+```
+
+- Import in css modules to access variables and mixins
+ 
+```scss
+// my_component.module.scss
+@import "nebenan-ui-kit";
+
+.button {
+  color: $color-base-00;
+}
+```
+
+## With postcss
+
+- First import global css
+
+```postcss
+// global.pcss
+@import "nebenan-ui-kit/styles.css";
+```
+
+- Import config in css modules to access variables
+
+```postcss
+// my_component.module.pcss
+@import "nebenan-ui-kit/config";
+
+.button { 
+  color: $color-base-00;
+}
+```
+
+
+
 # Icons
 
 **IMPORTANT**: The `nebenan-ui-kit` icon-font is deprecated. Use [`@goodhood/icons`](https://github.com/goodhood-eu/goodhood/tree/master/packages/icons) instead.
