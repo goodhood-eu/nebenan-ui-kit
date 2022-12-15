@@ -2,19 +2,19 @@
 @import "@fontsource/open-sans/400-italic";
 @import "@fontsource/open-sans/400";
 @import "@fontsource/open-sans/600";
-@import 'vendor/nebenan-codes';
+@import "vendor/nebenan-codes";
 
 // temporary decache by hand until all projects are using webpack
 @font-face {
-  font-family: 'nebenan_icons';
-  src: url('./fonts/nebenan.woff2') format('woff2');
-  font-display: swap;
+  font-family: "nebenan_icons";
+  src: url("./fonts/nebenan.woff2") format("woff2");
+  font-display: block;
   font-weight: normal;
   font-style: normal;
 }
 
-[class^='icon-']::before,
-[class*=' icon-']::before {
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
   width: 1em;
 
   // stylelint-disable-next-line
