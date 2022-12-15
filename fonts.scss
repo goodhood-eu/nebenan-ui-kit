@@ -7,10 +7,7 @@
 // temporary decache by hand until all projects are using webpack
 @font-face {
   font-family: 'nebenan_icons';
-  src:
-    url('./fonts/nebenan.woff') format('woff'),
-    url('./fonts/nebenan.woff2') format('woff2'),
-    url('./fonts/nebenan.ttf') format('truetype');
+  src: url('./fonts/nebenan.woff2') format('woff2');
   font-display: swap;
   font-weight: normal;
   font-style: normal;
