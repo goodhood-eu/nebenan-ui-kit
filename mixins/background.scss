@@ -1,9 +1,9 @@
 @mixin background-adaptive($image) {
-  $regex: '\.([a-z]+)$';
+  $regex: "\.([a-z]+)$";
   background-image: url($image);
 
   @media ($media-m) {
-    background-image: url('#{replace($regex, $image, '-desktop.$1')}');
+    background-image: url("#{replace($regex, $image, "-desktop.$1")}");
   }
 }
 
