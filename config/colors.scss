@@ -19,11 +19,12 @@ $color-blue-00: #007381;
 $color-blue-01: #0090a1;
 $color-blue-02: #cce9ec;
 $color-blue-03: #e5f3f5;
-$color-base-00: #61746e;
-$color-base-01: #799189;
-$color-base-02: #c9d3d0;
-$color-base-03: #e4e9e7;
-$color-base-04: #f1f4f3;
+$color-balkonmus-120: #61746e;
+$color-balkonmus-100: #799189;
+$color-balkonmus-80: #94a7a1;
+$color-balkonmus-40: #c9d3d0;
+$color-balkonmus-20: #e4e9e7;
+$color-balkonmus-10: #f1f4f3;
 $color-orange-00: #be7e24;
 $color-orange-01: #ee9e2d;
 $color-orange-02: #f1b157;
@@ -41,3 +42,10 @@ $color-purple-00: #854a95;
 $color-white-alpha: rgb(255 255 255 / 70%);
 $color-dark-alpha: rgb(0 0 0 / 70%);
 $color-transparent: rgb(0 0 0 / 0%);
+
+// "base" is balkonmus color but is missing a value
+$color-base-00: $color-balkonmus-120;
+$color-base-01: $color-balkonmus-100;
+$color-base-02: $color-balkonmus-40;
+$color-base-03: $color-balkonmus-20;
+$color-base-04: $color-balkonmus-10;
