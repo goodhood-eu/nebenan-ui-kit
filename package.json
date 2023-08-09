@@ -6,7 +6,7 @@
   "homepage": "https://github.com/goodhood-eu/nebenan-ui-kit#readme",
   "repository": "github:goodhood-eu/nebenan-ui-kit",
   "bugs": "https://github.com/goodhood-eu/nebenan-ui-kit/issues",
-  "version": "5.7.0-beta.0",
+  "version": "5.7.0-beta.1",
   "files": [
     "config/*.scss",
     "config/*/*.scss",

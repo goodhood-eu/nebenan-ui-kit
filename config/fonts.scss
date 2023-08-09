@@ -78,6 +78,12 @@ $font-style-detail-uppercase: normal;
   color: $primary-color;
 }
 
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "salt";
+}
+
 $font-family: "Inter", "Helvetica Neue", "Arial", sans-serif;
 $font-weight-m: 400;
 $font-weight-l: 600;
