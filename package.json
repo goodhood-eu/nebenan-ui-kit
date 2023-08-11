@@ -56,7 +56,7 @@
     "stylelint-config-nebenan": "^3.0.0"
   },
   "dependencies": {
-    "@fontsource/open-sans": "^5.0.8",
+    "@fontsource/inter": "^5.0.8",
     "normalize.css": "^8.0.1"
   },
   "peerDependencies": {
