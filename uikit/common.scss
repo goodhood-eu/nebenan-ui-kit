@@ -28,7 +28,7 @@
     margin-top: 0;
     float: right;
 
-    &:not(.ui-button-small):not(.ui-button-wide) {
+    &:not(.ui-button-small, .ui-button-wide) {
       width: 100%;
 
       @media ($media-m) {

@@ -34,10 +34,10 @@
     "start": "gulp"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "browserslist-config-nebenan": "^1.0.0",
+    "autoprefixer": "^10.4.14",
+    "browserslist-config-nebenan": "^1.0.1",
     "chalk": "^4.1.2",
-    "eslint": "^8.31.0",
+    "eslint": "^8.46.0",
     "eslint-config-nebenan": "^4.4.0",
     "fontellizr": "^1.4.4",
     "gulp": "^4.0.2",
@@ -47,17 +47,17 @@
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-webserver": "^0.9.1",
-    "node-sass-glob-importer": "^5.3.2",
-    "postcss": "^8.4.20",
+    "node-sass-glob-importer": "^5.3.3",
+    "postcss": "^8.4.27",
     "postcss-flexbugs-fixes": "^5.0.2",
     "promised-del": "^1.0.2",
-    "sass": "^1.57.1",
+    "sass": "^1.65.1",
     "sass-functions": "^2.0.1",
-    "stylelint": "^14.16.1",
-    "stylelint-config-nebenan": "^2.0.0"
+    "stylelint": "^15.10.2",
+    "stylelint-config-nebenan": "^3.0.0"
   },
   "dependencies": {
-    "@fontsource/open-sans": "^4.5.13",
+    "@fontsource/open-sans": "^5.0.8",
     "normalize.css": "^8.0.1"
   },
   "peerDependencies": {
