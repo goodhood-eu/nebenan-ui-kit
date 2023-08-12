@@ -60,6 +60,7 @@ input,
 button,
 textarea {
   font: normal list.slash($font-size-body-regular, $line-height-body-regular) $font-family;
+  font-feature-settings: "salt";
   color: $color-gray-02;
 }
 

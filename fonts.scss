@@ -1,13 +1,12 @@
-@import "@fontsource/inter/100";
-@import "@fontsource/inter/200";
-@import "@fontsource/inter/300";
-@import "@fontsource/inter/400";
-@import "@fontsource/inter/500";
-@import "@fontsource/inter/600";
-@import "@fontsource/inter/700";
-@import "@fontsource/inter/800";
-@import "@fontsource/inter/900";
 @import "vendor/nebenan-codes";
+
+@font-face {
+  font-family: Inter;
+  src: url("./fonts/Inter.var.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+}
 
 // temporary decache by hand until all projects are using webpack
 @font-face {
