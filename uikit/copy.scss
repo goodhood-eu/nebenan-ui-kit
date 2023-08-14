@@ -60,8 +60,8 @@ input,
 button,
 textarea {
   font-family: $font-family;
+  font-feature-settings: "salt";
   font-style: normal;
-  font-variant: normal;
   font-size: $font-size-body-regular;
   line-height: $line-height-body-regular;
   color: $color-gray-02;
