@@ -36,21 +36,26 @@ $line-height-detail-bold: 16px;
 $line-height-detail-uppercase: 16px;
 
 // Font Weight Variables
-$font-weight-heading-1: 500;
-$font-weight-heading-2: 600;
-$font-weight-heading-3: 600;
-$font-weight-heading-4: 600;
-$font-weight-heading-5: 600;
-$font-weight-heading-6: bold;
-$font-weight-heading-7: 800;
-$font-weight-heading-8: 800;
-$font-weight-body-large: 500;
-$font-weight-body-regular: normal;
-$font-weight-body-semibold: 600;
-$font-weight-body-italic: normal;
-$font-weight-detail-default: 500;
-$font-weight-detail-bold: bold;
-$font-weight-detail-uppercase: 800;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+$font-weight-heading-1: $font-weight-medium;
+$font-weight-heading-2: $font-weight-semibold;
+$font-weight-heading-3: $font-weight-semibold;
+$font-weight-heading-4: $font-weight-semibold;
+$font-weight-heading-5: $font-weight-semibold;
+$font-weight-heading-6: $font-weight-bold;
+$font-weight-heading-7: $font-weight-extrabold;
+$font-weight-heading-8: $font-weight-extrabold;
+$font-weight-body-large: $font-weight-medium;
+$font-weight-body-regular: $font-weight-regular;
+$font-weight-body-semibold: $font-weight-semibold;
+$font-weight-body-italic: $font-weight-regular;
+$font-weight-detail-default: $font-weight-medium;
+$font-weight-detail-bold: $font-weight-bold;
+$font-weight-detail-uppercase: $font-weight-extrabold;
 
 // Font Style Variables
 $font-style-heading-1: normal;
@@ -85,8 +90,10 @@ $font-style-detail-uppercase: normal;
 }
 
 $font-family: "Inter", "Helvetica Neue", "Arial", sans-serif;
-$font-weight-m: 400;
-$font-weight-l: 600;
+$font-weight-m: $font-weight-regular;
+$font-weight-l: $font-weight-semibold;
+$font-weight-xl: $font-weight-bold;
+$font-weight-xxl: $font-weight-extrabold;
 $font-size-s: $font-size-detail-default;
 $font-size-m: $font-size-body-regular;
 $line-height-s: 16px;
