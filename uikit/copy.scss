@@ -59,8 +59,11 @@ select,
 input,
 button,
 textarea {
-  font: normal list.slash($font-size-body-regular, $line-height-body-regular) $font-family;
-  font-feature-settings: "salt";
+  font-family: $font-family;
+  font-style: normal;
+  font-variant: normal;
+  font-size: $font-size-body-regular;
+  line-height: $line-height-body-regular;
   color: $color-gray-02;
 }
 
