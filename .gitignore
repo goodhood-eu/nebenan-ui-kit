@@ -26,12 +26,18 @@ node_modules/*
 
 # Users Environment Variables
 .lock-wscript
-.idea
 .scripts
 
-# MacOS bullshit
+# MacOS
 .DS_Store
 
+# Compiled files
 compiled/
-vendor/*
-!vendor/nebenan-codes.css
+
+# Code editors
+.vscode
+.idea
+
+# Yalc
+.yalc
+yalc.lock
