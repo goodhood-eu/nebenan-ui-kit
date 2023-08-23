@@ -1,18 +1,110 @@
-$font-family: "Open Sans", "Helvetica Neue", "Arial", sans-serif;
-$font-weight-m: 400;
-$font-weight-l: 600;
-$font-size-s: 85%;
-$font-size-m: 14px;
+// Color Variables
+$primary-color: #000; // Replace with your desired color
+
+// Font Size Variables
+$font-size-heading-1: 32px;
+$font-size-heading-2: 24px;
+$font-size-heading-3: 20px;
+$font-size-heading-4: 18px;
+$font-size-heading-5: 16px;
+$font-size-heading-6: 14px;
+$font-size-heading-7: 12px;
+$font-size-heading-8: 10px;
+$font-size-body-large: 16px;
+$font-size-body-regular: 14px;
+$font-size-body-semibold: 14px;
+$font-size-body-italic: 14px;
+$font-size-detail-default: 12px;
+$font-size-detail-bold: 12px;
+$font-size-detail-uppercase: 10px;
+
+// Line Height Variables
+$line-height-heading-1: 40px;
+$line-height-heading-2: 32px;
+$line-height-heading-3: 24px;
+$line-height-heading-4: 24px;
+$line-height-heading-5: 20px;
+$line-height-heading-6: 24px;
+$line-height-heading-7: 16px;
+$line-height-heading-8: 16px;
+$line-height-body-large: 24px;
+$line-height-body-regular: 20px;
+$line-height-body-semibold: 20px;
+$line-height-body-italic: 20px;
+$line-height-detail-default: 16px;
+$line-height-detail-bold: 16px;
+$line-height-detail-uppercase: 16px;
+
+// Font Weight Variables
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+$font-weight-heading-1: $font-weight-medium;
+$font-weight-heading-2: $font-weight-semibold;
+$font-weight-heading-3: $font-weight-semibold;
+$font-weight-heading-4: $font-weight-semibold;
+$font-weight-heading-5: $font-weight-semibold;
+$font-weight-heading-6: $font-weight-bold;
+$font-weight-heading-7: $font-weight-extrabold;
+$font-weight-heading-8: $font-weight-extrabold;
+$font-weight-body-large: $font-weight-medium;
+$font-weight-body-regular: $font-weight-regular;
+$font-weight-body-semibold: $font-weight-semibold;
+$font-weight-body-italic: $font-weight-regular;
+$font-weight-detail-default: $font-weight-medium;
+$font-weight-detail-bold: $font-weight-bold;
+$font-weight-detail-uppercase: $font-weight-extrabold;
+
+// Font Style Variables
+$font-style-heading-1: normal;
+$font-style-heading-2: normal;
+$font-style-heading-3: normal;
+$font-style-heading-4: normal;
+$font-style-heading-5: normal;
+$font-style-heading-6: normal;
+$font-style-heading-7: normal;
+$font-style-heading-8: normal;
+$font-style-body-large: normal;
+$font-style-body-regular: normal;
+$font-style-body-semibold: normal;
+$font-style-body-italic: italic;
+$font-style-detail-default: normal;
+$font-style-detail-bold: normal;
+$font-style-detail-uppercase: normal;
+
+// Common Style Mixin
+@mixin common-style($font-size, $line-height, $font-weight, $font-style) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  color: $primary-color;
+}
+
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$font-family: "Inter", "Helvetica Neue", "Arial", sans-serif;
+$font-weight-m: $font-weight-regular;
+$font-weight-l: $font-weight-semibold;
+$font-weight-xl: $font-weight-bold;
+$font-weight-xxl: $font-weight-extrabold;
+$font-size-s: $font-size-detail-default;
+$font-size-m: $font-size-body-regular;
 $line-height-s: 16px;
 $line-height-m: 20px;
-$heading-size-1: 25px;
-$heading-size-2: 20px;
-$heading-size-3: 17px;
-$heading-size-4: 16px;
-$heading-weight-1: $font-weight-m;
-$heading-weight-2: $font-weight-m;
-$heading-weight-3: $font-weight-l;
-$heading-weight-4: $font-weight-l;
+$heading-size-1: $font-size-heading-2;
+$heading-size-2: $font-size-heading-3;
+$heading-size-3: $font-size-heading-4;
+$heading-size-4: $font-size-heading-5;
+$heading-weight-1: $line-height-heading-2;
+$heading-weight-2: $line-height-heading-3;
+$heading-weight-3: $line-height-heading-4;
+$heading-weight-4: $line-height-heading-5;
 $link-weight: $font-weight-l;
 $text-default-size: $font-size-m;
 $text-default-weight: $font-weight-m;

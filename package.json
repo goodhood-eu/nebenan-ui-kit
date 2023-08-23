@@ -6,7 +6,7 @@
   "homepage": "https://github.com/goodhood-eu/nebenan-ui-kit#readme",
   "repository": "github:goodhood-eu/nebenan-ui-kit",
   "bugs": "https://github.com/goodhood-eu/nebenan-ui-kit/issues",
-  "version": "5.6.1",
+  "version": "6.0.0",
   "files": [
     "config/*.scss",
     "config/*/*.scss",
@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.15",
-    "browserslist-config-nebenan": "^1.0.1",
+    "browserslist-config-nebenan": "^1.0.2",
     "chalk": "^4.1.2",
     "eslint": "^8.47.0",
     "eslint-config-nebenan": "^4.4.0",
@@ -47,16 +47,15 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-webserver": "^0.9.1",
     "node-sass-glob-importer": "^5.3.3",
-    "postcss": "^8.4.27",
+    "postcss": "^8.4.28",
     "postcss-flexbugs-fixes": "^5.0.2",
     "promised-del": "^1.0.2",
-    "sass": "^1.65.1",
+    "sass": "^1.66.1",
     "sass-functions": "^2.0.1",
-    "stylelint": "^15.10.2",
+    "stylelint": "^15.10.3",
     "stylelint-config-nebenan": "^3.0.0"
   },
   "dependencies": {
-    "@fontsource/open-sans": "^5.0.8",
     "normalize.css": "^8.0.1"
   },
   "peerDependencies": {
