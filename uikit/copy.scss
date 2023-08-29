@@ -59,6 +59,8 @@ select,
 input,
 button,
 textarea {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-family: $font-family;
   font-feature-settings: "salt";
   font-style: normal;
