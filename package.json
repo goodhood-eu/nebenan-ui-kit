@@ -47,7 +47,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-webserver": "^0.9.1",
     "node-sass-glob-importer": "^5.3.3",
-    "postcss": "^8.4.28",
+    "postcss": "^8.4.29",
     "postcss-flexbugs-fixes": "^5.0.2",
     "promised-del": "^1.0.2",
     "sass": "^1.66.1",
