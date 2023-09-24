@@ -74,15 +74,6 @@ $font-style-detail-default: normal;
 $font-style-detail-bold: normal;
 $font-style-detail-uppercase: normal;
 
-// Common Style Mixin
-@mixin common-style($font-size, $line-height, $font-weight, $font-style) {
-  font-size: $font-size;
-  line-height: $line-height;
-  font-weight: $font-weight;
-  font-style: $font-style;
-  color: $primary-color;
-}
-
 $font-family: "Inter", "Helvetica Neue", "Arial", sans-serif;
 $font-weight-m: $font-weight-regular;
 $font-weight-l: $font-weight-semibold;
