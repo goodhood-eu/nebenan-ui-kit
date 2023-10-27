@@ -6,7 +6,7 @@
   "homepage": "https://github.com/goodhood-eu/nebenan-ui-kit#readme",
   "repository": "github:goodhood-eu/nebenan-ui-kit",
   "bugs": "https://github.com/goodhood-eu/nebenan-ui-kit/issues",
-  "version": "6.4.2",
+  "version": "6.4.3",
   "files": [
     "config/*.scss",
     "config/*/*.scss",
@@ -51,7 +51,7 @@
     "postcss-flexbugs-fixes": "^5.0.2",
     "promised-del": "^1.0.2",
     "sass": "^1.69.5",
-    "sass-functions": "^2.0.1",
+    "sass-functions": "^2.0.2",
     "stylelint": "^15.11.0",
     "stylelint-config-nebenan": "^3.0.1"
   },

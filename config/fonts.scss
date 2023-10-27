@@ -74,15 +74,7 @@ $font-style-detail-default: normal;
 $font-style-detail-bold: normal;
 $font-style-detail-uppercase: normal;
 
-// Common Style Mixin
-@mixin common-style($font-size, $line-height, $font-weight, $font-style) {
-  font-size: $font-size;
-  line-height: $line-height;
-  font-weight: $font-weight;
-  font-style: $font-style;
-  color: $primary-color;
-}
-
+// Font Family Variables
 $font-family: "Inter", "Helvetica Neue", "Arial", sans-serif;
 $font-weight-m: $font-weight-regular;
 $font-weight-l: $font-weight-semibold;
@@ -92,6 +84,8 @@ $font-size-s: $font-size-detail-default;
 $font-size-m: $font-size-body-regular;
 $line-height-s: 16px;
 $line-height-m: 20px;
+
+// Typography Variables
 $heading-size-1: $font-size-heading-2;
 $heading-size-2: $font-size-heading-3;
 $heading-size-3: $font-size-heading-4;
