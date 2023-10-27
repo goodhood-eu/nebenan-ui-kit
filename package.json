@@ -33,11 +33,11 @@
     "start": "gulp"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.15",
+    "autoprefixer": "^10.4.16",
     "browserslist-config-nebenan": "^1.0.2",
     "chalk": "^4.1.2",
-    "eslint": "^8.48.0",
-    "eslint-config-nebenan": "^4.4.0",
+    "eslint": "^8.52.0",
+    "eslint-config-nebenan": "^4.4.1",
     "fontellizr": "^1.4.5",
     "gulp": "^4.0.2",
     "gulp-livereload": "^4.0.2",
@@ -47,13 +47,13 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-webserver": "^0.9.1",
     "node-sass-glob-importer": "^5.3.3",
-    "postcss": "^8.4.29",
+    "postcss": "^8.4.31",
     "postcss-flexbugs-fixes": "^5.0.2",
     "promised-del": "^1.0.2",
-    "sass": "^1.66.1",
+    "sass": "^1.69.5",
     "sass-functions": "^2.0.1",
-    "stylelint": "^15.10.3",
-    "stylelint-config-nebenan": "^3.0.0"
+    "stylelint": "^15.11.0",
+    "stylelint-config-nebenan": "^3.0.1"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
