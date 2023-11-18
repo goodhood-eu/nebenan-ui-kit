@@ -22,11 +22,11 @@
 }
 
 .ui-controls {
-  @include legacy-clearfix;
+  display: flex;
+  align-items: center;
 
   .ui-button {
-    margin-top: 0;
-    float: right;
+    margin-left: auto;
 
     &:not(.ui-button-small, .ui-button-wide) {
       width: 100%;
@@ -34,16 +34,6 @@
       @media ($media-m) {
         width: auto;
       }
-    }
-  }
-
-  a,
-  .ui-link {
-    margin-top: 10px;
-    display: inline-block;
-
-    &:only-child {
-      margin-top: 0;
     }
   }
 }
