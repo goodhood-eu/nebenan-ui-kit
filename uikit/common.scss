@@ -23,10 +23,17 @@
 
 .ui-controls {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 15px;
 
   .ui-button {
     margin-left: auto;
+    order: -1;
+
+    @media ($media-m) {
+      order: 1;
+    }
 
     &:not(.ui-button-small, .ui-button-wide) {
       width: 100%;
