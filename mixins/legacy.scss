@@ -1,9 +1,0 @@
-@mixin legacy-clearfix {
-  @warn "This old clearfix mixin is deprecated! Remove it and test if everything still looks ok.";
-
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
