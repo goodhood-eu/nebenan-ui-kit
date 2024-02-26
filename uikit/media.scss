@@ -1,6 +1,7 @@
 .ui-media {
   display: flex;
   flex-wrap: nowrap;
+  gap: $offset-m;
 
   > .ui-media-image {
     width: $thumbnail-m;
@@ -11,7 +12,6 @@
 
   > .ui-media-content {
     min-width: 0;
-    margin-left: 10px;
     display: block;
     flex-grow: 1;
   }
